@@ -1,0 +1,61 @@
+﻿<Window x:Class="Group8_WPF.AddMemberSkillWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group8_WPF"
+        mc:Ignorable="d"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:ThemeManager.RequestedTheme="Light"
+        Height="300"
+        Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid Margin="20">
+        <!-- Header -->
+        <TextBlock Text="Skill"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   Foreground="#FF116DFF"
+                   HorizontalAlignment="Center"
+                   TextAlignment="Center"
+                   Width="198" />
+        <!-- Input Fields -->
+        <StackPanel VerticalAlignment="Top"
+                    Margin="10,48,-10,0"
+                    Height="339">
+            <Grid Margin="0,5,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <Label>Skill</Label>
+                    <ComboBox x:Name="SkillComboBox"
+                              Margin="0,5,5,0"
+                              Width="166" />
+                </StackPanel>
+                <!-- End Year -->
+                <StackPanel Grid.Column="1"
+                            Margin="0,0,-8,0">
+                    <Label>Level</Label>
+                    <ComboBox x:Name="LevelComboBox"
+                              Margin="0,5,5,0"
+                              Width="168">
+                        <ComboBoxItem Content="Beginner" />
+                        <ComboBoxItem Content="Intermediate" />
+                        <ComboBoxItem Content="Excellent" />
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+        <!-- Button -->
+        <Button Content="Add"
+                Width="88"
+                HorizontalAlignment="Center"
+                Margin="0,183,0,0"
+                VerticalAlignment="Top"
+                Height="34"
+                Click="Add_Click" />
+    </Grid>
+</Window>

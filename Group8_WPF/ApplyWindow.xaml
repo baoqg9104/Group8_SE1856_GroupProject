@@ -1,0 +1,72 @@
+﻿<Window x:Class="Group8_WPF.ApplyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:ThemeManager.RequestedTheme="Light"
+        mc:Ignorable="d"
+        Title="Apply for Job"
+        Height="350"
+        Width="500"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <!-- Header Section -->
+        <TextBlock Text="Apply for Job Position"
+                   FontSize="20"
+                   Grid.Row="0"
+                   FontWeight="Bold"
+                   Foreground="#3A8DFF"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20" />
+        <!-- Job Details Section -->
+        <TextBlock x:Name="JobTitle"
+                   Grid.Row="1"
+                   Text="Software Engineer (Android, Python) at LG Electronics Development Vietnam (LGEDV)
+"
+                   FontSize="15"
+                   TextWrapping="Wrap"
+                   TextAlignment="Center"
+                   Margin="0,0,2,0" />
+        <!-- CV Upload Section -->
+        <StackPanel Grid.Row="2"
+                    Orientation="Vertical"
+                    HorizontalAlignment="Center"
+                    Margin="0,30,0,0">
+            <TextBlock Text="Upload your CV (pdf):"
+                       FontWeight="SemiBold"
+                       Margin="0,0,0,10"
+                       HorizontalAlignment="Center" />
+            <Button Content="Choose File"
+                    Padding="10,5"
+                    FontSize="12"
+                    HorizontalAlignment="Center"
+                    Click="UploadButton_Click"
+                     />
+            <TextBlock x:Name="FileNameTextBlock"
+                       FontStyle="Italic"
+                       Foreground="Gray"
+                       HorizontalAlignment="Center"
+                       Margin="0,10,0,0" />
+        </StackPanel>
+        <!-- Submit Button -->
+        <Button Content="Submit Application"
+                Width="200"
+                Padding="10,5"
+                Grid.Row="2"
+                HorizontalAlignment="Center"
+                Margin="0,124,0,0"
+                Command="{Binding SubmitApplicationCommand}"
+                Background="#3A8DFF"
+                Foreground="White"
+                FontWeight="Bold"
+                VerticalAlignment="Top"
+                Click="Submit_Click"
+                />
+    </Grid>
+</Window>

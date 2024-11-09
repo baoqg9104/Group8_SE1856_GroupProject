@@ -1,0 +1,1689 @@
+﻿<Window x:Class="Group8_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group8_WPF"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:ThemeManager.RequestedTheme="Light"
+        mc:Ignorable="d"
+        Title=""
+        Height="750"
+        Width="1150"
+        WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <local:SkillsConverter x:Key="SkillsConverter" />
+    </Window.Resources>
+    <Border CornerRadius="12"
+            Background="#FAFAFA">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <!-- Window Control Buttons -->
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="8" />
+                </Grid.ColumnDefinitions>
+                <Image Source="Images/job-search.png"
+                       Width="52"
+                       HorizontalAlignment="Left"
+                       Margin="30,25,0,-29" />
+                <Button Grid.Column="1"
+                        BorderThickness="0"
+                        Foreground="White"
+                        FontSize="20"
+                        Click="btnMinimize_Click"
+                        Focusable="False"
+                        Cursor="Hand">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background"
+                                    Value="#278BEF" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver"
+                                         Value="True">
+                                    <Setter Property="Background"
+                                            Value="#278BEF" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="25"
+                                    Height="25"
+                                    CornerRadius="30"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center" />
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <Image Source="Images/minus.png"
+                           Width="12"
+                           Height="13" />
+                </Button>
+                <Button Grid.Column="2"
+                        BorderThickness="0"
+                        Foreground="White"
+                        FontSize="20"
+                        Click="btnMaximize_Click"
+                        Focusable="False"
+                        Cursor="Hand">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background"
+                                    Value="Green" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver"
+                                         Value="True">
+                                    <Setter Property="Background"
+                                            Value="Green" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="25"
+                                    Height="25"
+                                    CornerRadius="30"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center" />
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <Image Source="Images/window-restore.png"
+                           Width="12"
+                           Height="12" />
+                </Button>
+                <Button Grid.Column="3"
+                        BorderThickness="0"
+                        Foreground="White"
+                        FontSize="15"
+                        Click="btnClose_Click"
+                        Focusable="False"
+                        Cursor="Hand">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background"
+                                    Value="#C62DAE" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver"
+                                         Value="True">
+                                    <Setter Property="Background"
+                                            Value="#C62DAE" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="25"
+                                    Height="25"
+                                    CornerRadius="30"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center" />
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <Image Source="Images/xmark.png"
+                           Width="12" />
+                </Button>
+            </Grid>
+            <!-- Main Content -->
+            <Grid Grid.Row="1"
+                  Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <!-- Header with Title and Login/Signup -->
+                <Grid Grid.Row="0"
+                      Margin="0,0,0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Right"
+                                Margin="0,0,10,0">
+                        <Button x:Name="LoginBtn"
+                                Content="Log in"
+                                Margin="0,0,10,0"
+                                Background="#33055170"
+                                Width="76"
+                                Height="34" />
+                        <Button x:Name="SignupBtn"
+                                Content="Sign up"
+                                Foreground="White"
+                                Background="#FF116DFF"
+                                Width="77"
+                                Height="34"
+                                Click="Signup_Click" />
+                    </StackPanel>
+                </Grid>
+                <!-- Tab Control -->
+                <TabControl x:Name="MainTabControl"
+                            Grid.Row="1"
+                            Margin="0,10,0,0"
+                            SelectionChanged="MainTabControl_SelectionChanged">
+                    <!-- Jobs Tab -->
+                    <TabItem x:Name="Jobs"
+                             Header="Jobs">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!-- Search Controls -->
+                            <Grid Grid.Row="0"
+                                  Margin="0,14,10,10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.5*" />
+                                    <ColumnDefinition Width="1.5*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0"
+                                            Orientation="Horizontal"
+                                            HorizontalAlignment="Left">
+                                    <Button x:Name="ViewCompanyBtn"
+                                            Height="34"
+                                            Width="132"
+                                            Click="ViewCompany_Click"
+                                            Margin="10,0,0,0">View Company</Button>
+                                </StackPanel>
+                                <StackPanel Grid.Column="1"
+                                            Orientation="Horizontal"
+                                            HorizontalAlignment="Center">
+                                    <ComboBox x:Name="CityBox"
+                                              Width="130"
+                                              SelectedIndex="0"
+                                              Height="34"
+                                              VerticalAlignment="Center"
+                                              Margin="0,0,10,0"
+                                              Grid.Column="1">
+                                        <ComboBoxItem Content="All Cities" />
+                                        <ComboBoxItem Content="Ha Noi" />
+                                        <ComboBoxItem Content="Ho Chi Minh" />
+                                        <ComboBoxItem Content="Da Nang" />
+                                        <ComboBoxItem Content="Others" />
+                                    </ComboBox>
+                                    <TextBox x:Name="SearchBox"
+                                             Width="227"
+                                             Height="34"
+                                             KeyDown="SearchBox_KeyDown"
+                                             HorizontalAlignment="Center"
+                                             Margin="0,0,10,0"
+                                             VerticalAlignment="Center"
+                                             Grid.Column="1" />
+                                    <Button Content="Search"
+                                            Height="34"
+                                            Width="72"
+                                            Click="Search_Click"
+                                            Grid.Column="1" />
+                                </StackPanel>
+                                <StackPanel Grid.Column="2"
+                                            Orientation="Horizontal"
+                                            HorizontalAlignment="Center">
+                                    <Button x:Name="ApplyBtn"
+                                            Content="Apply now"
+                                            Height="34"
+                                            Width="99"
+                                            Click="Apply_Click" />
+                                </StackPanel>
+                            </Grid>
+                            <!-- Jobs DataGrid -->
+                            <DataGrid x:Name="JobDataGrid"
+                                      Grid.Row="1"
+                                      Margin="0,10,0,0"
+                                      AutoGenerateColumns="False"
+                                      CanUserAddRows="False"
+                                      IsReadOnly="True"
+                                      SelectionMode="Single"
+                                      SelectionChanged="JobDataGrid_SelectionChanged">
+                                <DataGrid.CellStyle>
+                                    <Style TargetType="DataGridCell">
+                                        <Setter Property="BorderThickness"
+                                                Value="0,0,1,1" />
+                                        <Setter Property="BorderBrush"
+                                                Value="Gray" />
+                                        <Setter Property="Padding"
+                                                Value="5" />
+                                    </Style>
+                                </DataGrid.CellStyle>
+                                <DataGrid.Resources>
+                                    <Style TargetType="DataGridColumnHeader">
+                                        <Setter Property="Height"
+                                                Value="30" />
+                                        <Setter Property="Background"
+                                                Value="#007ACC" />
+                                        <Setter Property="Foreground"
+                                                Value="White" />
+                                        <Setter Property="FontWeight"
+                                                Value="SemiBold" />
+                                        <Setter Property="HorizontalContentAlignment"
+                                                Value="Center" />
+                                    </Style>
+                                </DataGrid.Resources>
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Header="Company"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Company.CompanyName}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Job Title"
+                                                            Width="0.8*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding JobTitle}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Description"
+                                                            Width="2*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding JobDescription}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Skills"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding JobSkills, Converter={StaticResource SkillsConverter}}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Location"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Location}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Salary"
+                                                            Width="0.7*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Salary, StringFormat=C0}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Currency"
+                                                            Width="0.5*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding CurrencyCode}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Application deadline"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding ApplicationDeadline, StringFormat='{}{0:dd/MM/yyyy}'}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <!-- Companies Tab -->
+                    <TabItem x:Name="Companies"
+                             Header="Companies">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!-- Company Search Controls -->
+                            <Grid Grid.Row="0"
+                                  Margin="0,10,-267,10">
+                                <ComboBox x:Name="CountyBox"
+                                          Width="130"
+                                          SelectedIndex="0"
+                                          Height="34"
+                                          Margin="347,0,0,0"
+                                          VerticalAlignment="Center">
+                                    <ComboBoxItem Content="All countries" />
+                                    <ComboBoxItem Content="Vietnam" />
+                                    <ComboBoxItem Content="Japan" />
+                                    <ComboBoxItem Content="Singapore" />
+                                    <ComboBoxItem Content="Australia" />
+                                    <ComboBoxItem Content="South Korea" />
+                                    <ComboBoxItem Content="Others" />
+                                </ComboBox>
+                                <TextBox x:Name="SearchCompanyBox"
+                                         KeyDown="SearchCompanyBox_KeyDown"
+                                         HorizontalAlignment="Left"
+                                         Width="227"
+                                         Margin="490,0,680,0" />
+                                <Button Content="Search"
+                                        Height="34"
+                                        Width="72"
+                                        Click="SearchCompany_Click"
+                                        Margin="729,0,0,0" />
+                            </Grid>
+                            <!-- Companies DataGrid -->
+                            <DataGrid x:Name="CompanyDataGrid"
+                                      Grid.Row="1"
+                                      Margin="0,10,0,0"
+                                      Background="#FAFAFA"
+                                      AutoGenerateColumns="False"
+                                      CanUserAddRows="False"
+                                      IsReadOnly="True"
+                                      SelectionMode="Single">
+                                <DataGrid.CellStyle>
+                                    <Style TargetType="DataGridCell">
+                                        <Setter Property="BorderThickness"
+                                                Value="0,0,1,1" />
+                                        <Setter Property="BorderBrush"
+                                                Value="Gray" />
+                                        <Setter Property="Padding"
+                                                Value="5" />
+                                    </Style>
+                                </DataGrid.CellStyle>
+                                <DataGrid.Resources>
+                                    <Style TargetType="DataGridColumnHeader">
+                                        <Setter Property="Height"
+                                                Value="30" />
+                                        <Setter Property="Background"
+                                                Value="#007ACC" />
+                                        <Setter Property="Foreground"
+                                                Value="White" />
+                                        <Setter Property="FontWeight"
+                                                Value="SemiBold" />
+                                        <Setter Property="HorizontalContentAlignment"
+                                                Value="Center" />
+                                    </Style>
+                                </DataGrid.Resources>
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Header="Company Name"
+                                                            Width="1.5*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding CompanyName}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Company Type"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding CompanyType}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Industry"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Industry}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Description"
+                                                            Width="2*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Description}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Country"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Country}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="JobApplied"
+                             Header="Job Applied">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!-- Company Search Controls -->
+                            <!-- Companies DataGrid -->
+                            <Button x:Name="WithdrawBtn"
+                                    Margin="925,19,0,0"
+                                    Grid.RowSpan="2"
+                                    VerticalAlignment="Top"
+                                    Click="Withdraw_Click">Withdraw</Button>
+                            <DataGrid x:Name="JobAppliedDataGrid"
+                                      Grid.Row="1"
+                                      Margin="0,70,0,10"
+                                      Background="#FAFAFA"
+                                      AutoGenerateColumns="False"
+                                      CanUserAddRows="False"
+                                      IsReadOnly="True"
+                                      SelectionMode="Single"
+                                      SelectionChanged="JobAppliedGrid_SelectionChanged">
+                                <DataGrid.CellStyle>
+                                    <Style TargetType="DataGridCell">
+                                        <Setter Property="BorderThickness"
+                                                Value="0,0,1,1" />
+                                        <Setter Property="BorderBrush"
+                                                Value="Gray" />
+                                        <Setter Property="Padding"
+                                                Value="5" />
+                                    </Style>
+                                </DataGrid.CellStyle>
+                                <DataGrid.Resources>
+                                    <Style TargetType="DataGridColumnHeader">
+                                        <Setter Property="Height"
+                                                Value="30" />
+                                        <Setter Property="Background"
+                                                Value="#007ACC" />
+                                        <Setter Property="Foreground"
+                                                Value="White" />
+                                        <Setter Property="FontWeight"
+                                                Value="SemiBold" />
+                                        <Setter Property="HorizontalContentAlignment"
+                                                Value="Center" />
+                                    </Style>
+                                </DataGrid.Resources>
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Header="Job title"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Job.JobTitle}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Company"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Job.Company.CompanyName}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Application date"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding ApplicationDate}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Status"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Status}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="View CV"
+                                                            Width="100">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Button Content="View CV"
+                                                        Click="ViewCVButton_Click"
+                                                        Tag="{Binding CvFilePath}"
+                                                        Margin="5,5,5,5"
+                                                        FontSize="12"
+                                                        Cursor="Hand" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="InterviewSchedule"
+                             Header="Interview Schedule">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"
+                                               MinHeight="74" />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <StackPanel VerticalAlignment="Center"
+                                        HorizontalAlignment="Right"
+                                        Height="34">
+                                <Button x:Name="ConfirmBtn"
+                                        Content="Confirm"
+                                        Margin="0,0,100,0"
+                                        Click="Confirm_Click" />
+                            </StackPanel>
+                            <DataGrid x:Name="InterviewDataGrid"
+                                      Grid.Row="1"
+                                      Margin="0,0,10,10"
+                                      Background="#FAFAFA"
+                                      AutoGenerateColumns="False"
+                                      CanUserAddRows="False"
+                                      IsReadOnly="True"
+                                      SelectionMode="Single"
+                                      SelectionChanged="InterviewDataGrid_SelectionChanged">
+                                <DataGrid.CellStyle>
+                                    <Style TargetType="DataGridCell">
+                                        <Setter Property="BorderThickness"
+                                                Value="0,0,1,1" />
+                                        <Setter Property="BorderBrush"
+                                                Value="Gray" />
+                                        <Setter Property="Padding"
+                                                Value="5" />
+                                    </Style>
+                                </DataGrid.CellStyle>
+                                <DataGrid.Resources>
+                                    <Style TargetType="DataGridColumnHeader">
+                                        <Setter Property="Height"
+                                                Value="30" />
+                                        <Setter Property="Background"
+                                                Value="#007ACC" />
+                                        <Setter Property="Foreground"
+                                                Value="White" />
+                                        <Setter Property="FontWeight"
+                                                Value="SemiBold" />
+                                        <Setter Property="HorizontalContentAlignment"
+                                                Value="Center" />
+                                    </Style>
+                                </DataGrid.Resources>
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Header="Job title"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding JobApplication.Job.JobTitle}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Company"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding JobApplication.Job.Company.CompanyName}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Interview date"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding InterviewDate}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Status"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Status}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="MyProfile"
+                             Header="My Profile">
+                        <ScrollViewer>
+                            <StackPanel Margin="20"
+                                        Width="512"
+                                        Height="Auto">
+                                <!-- Header -->
+                                <!-- Name Field Full Width -->
+                                <Grid Margin="0,20,0,20"
+                                      Height="235">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <!-- Left Column -->
+                                    <StackPanel Grid.Column="0"
+                                                Grid.Row="0"
+                                                Margin="7,-10,10,20">
+                                        <TextBlock Text="Name:"
+                                                   FontWeight="Bold"
+                                                   Margin="0,10,0,5" />
+                                        <TextBox x:Name="NameTextBox"
+                                                 Width="239"
+                                                 Height="30"
+                                                 Padding="5"
+                                                 BorderBrush="#FF116DFF"
+                                                 BorderThickness="1" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1"
+                                                Grid.Row="0"
+                                                Margin="7,-10,5,14">
+                                        <TextBlock Text="Password:"
+                                                   FontWeight="Bold"
+                                                   Margin="0,10,0,5" />
+                                        <PasswordBox x:Name="PasswordBox"
+                                                     Width="239"
+                                                     Height="32"
+                                                     Padding="5"
+                                                     BorderBrush="#FF116DFF"
+                                                     BorderThickness="1"></PasswordBox>
+                                    </StackPanel>
+                                    <!-- Left Column -->
+                                    <StackPanel Grid.Column="0"
+                                                Margin="7,68,10,27"
+                                                Grid.RowSpan="3">
+                                        <!-- Email -->
+                                        <TextBlock Text="Email:"
+                                                   FontWeight="Bold"
+                                                   Margin="0,10,0,5" />
+                                        <TextBox x:Name="EmailTextBox"
+                                                 Width="239"
+                                                 Height="30"
+                                                 Padding="5"
+                                                 BorderBrush="#FF116DFF"
+                                                 BorderThickness="1" />
+                                        <!-- Gender -->
+                                        <TextBlock Text="Gender:"
+                                                   FontWeight="Bold"
+                                                   Margin="0,10,0,5" />
+                                        <ComboBox x:Name="GenderComboBox"
+                                                  Width="238"
+                                                  Height="30"
+                                                  Padding="5"
+                                                  BorderBrush="#FF116DFF"
+                                                  BorderThickness="1">
+                                            <ComboBoxItem Content="Male" />
+                                            <ComboBoxItem Content="Female" />
+                                        </ComboBox>
+                                    </StackPanel>
+                                    <!-- Right Column -->
+                                    <StackPanel Grid.Column="1"
+                                                Margin="10,68,5,21"
+                                                Grid.RowSpan="3">
+                                        <!-- Date of Birth -->
+                                        <TextBlock Text="Date of Birth:"
+                                                   FontWeight="Bold"
+                                                   Margin="0,10,0,5" />
+                                        <DatePicker x:Name="DateOfBirthPicker"
+                                                    Width="241"
+                                                    Height="32"
+                                                    BorderBrush="#FF116DFF"
+                                                    BorderThickness="1" />
+                                        <!-- Phone -->
+                                        <TextBlock Text="Phone:"
+                                                   FontWeight="Bold"
+                                                   Margin="0,10,0,5"
+                                                   Height="20" />
+                                        <TextBox x:Name="PhoneTextBox"
+                                                 Width="239"
+                                                 Height="30"
+                                                 Padding="5"
+                                                 BorderBrush="#FF116DFF"
+                                                 BorderThickness="1" />
+                                    </StackPanel>
+                                </Grid>
+                                <Button Content="Save"
+                                        Width="80"
+                                        Height="30"
+                                        Margin="0,5,0,0"
+                                        Background="#FF116DFF"
+                                        Foreground="White"
+                                        HorizontalAlignment="Right"
+                                        Click="SaveProfile_Click" />
+                                <!-- Education Section -->
+                                <TextBlock Text="Education:"
+                                           FontWeight="Bold"
+                                           Margin="0,15,0,5"
+                                           Width="497" />
+                                <DataGrid x:Name="EducationDataGrid"
+                                          AutoGenerateColumns="False"
+                                          Width="500"
+                                          Height="177"
+                                          BorderBrush="#FF116DFF"
+                                          BorderThickness="1"
+                                          IsReadOnly="True">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="School"
+                                                            Binding="{Binding School}"
+                                                            Width="*" />
+                                        <DataGridTextColumn Header="Major"
+                                                            Binding="{Binding Major}"
+                                                            Width="*" />
+                                        <DataGridTextColumn Header="From"
+                                                            Binding="{Binding StartDate}"
+                                                            Width="*" />
+                                        <DataGridTextColumn Header="To"
+                                                            Binding="{Binding EndDate}"
+                                                            Width="*" />
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Right">
+                                    <Button Content="Add"
+                                            Width="80"
+                                            Height="30"
+                                            Margin="0,5,0,0"
+                                            Background="#FF116DFF"
+                                            Foreground="White"
+                                            HorizontalAlignment="Right"
+                                            Click="AddEducation_Click" />
+                                    <Button Content="Edit"
+                                            Width="80"
+                                            Height="30"
+                                            Margin="15,5,0,0"
+                                            Background="#74CE53"
+                                            Foreground="White"
+                                            HorizontalAlignment="Right"
+                                            Click="EditEducation_Click" />
+                                    <Button Content="Delete"
+                                            Width="80"
+                                            Height="30"
+                                            Margin="15,5,0,0"
+                                            Background="#D73617"
+                                            Foreground="White"
+                                            HorizontalAlignment="Right"
+                                            Click="DeleteEducation_Click" />
+                                </StackPanel>
+                                <!-- Work Experience Section -->
+                                <TextBlock Text="Work Experience:"
+                                           FontWeight="Bold"
+                                           Margin="0,15,0,5"
+                                           Width="502" />
+                                <DataGrid x:Name="WorkExperienceDataGrid"
+                                          AutoGenerateColumns="False"
+                                          Width="500"
+                                          Height="177"
+                                          BorderBrush="#FF116DFF"
+                                          BorderThickness="1"
+                                          IsReadOnly="True">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Job Title"
+                                                            Binding="{Binding JobTitle}"
+                                                            Width="*" />
+                                        <DataGridTextColumn Header="Company"
+                                                            Binding="{Binding CompanyName}"
+                                                            Width="*" />
+                                        <DataGridTextColumn Header="From"
+                                                            Binding="{Binding StartDate}"
+                                                            Width="*" />
+                                        <DataGridTextColumn Header="To"
+                                                            Binding="{Binding EndDate}"
+                                                            Width="*" />
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Right">
+                                    <Button Content="Add"
+                                            Width="80"
+                                            Height="30"
+                                            Margin="0,5,0,0"
+                                            Background="#FF116DFF"
+                                            Foreground="White"
+                                            HorizontalAlignment="Right"
+                                            Click="AddWorkExperience_Click" />
+                                    <Button Content="Edit"
+                                            Width="80"
+                                            Height="30"
+                                            Margin="15,5,0,0"
+                                            Background="#74CE53"
+                                            Foreground="White"
+                                            HorizontalAlignment="Right"
+                                            Click="EditWorkExperience_Click" />
+                                    <Button Content="Delete"
+                                            Width="80"
+                                            Height="30"
+                                            Margin="15,5,0,0"
+                                            Background="#D73617"
+                                            Foreground="White"
+                                            HorizontalAlignment="Right"
+                                            Click="DeleteWorkExperience_Click" />
+                                </StackPanel>
+                                <!-- Skills Section -->
+                                <TextBlock Text="Skills:"
+                                           FontWeight="Bold"
+                                           Margin="0,15,0,5"
+                                           Width="497" />
+                                <DataGrid x:Name="MemberSkillDataGrid"
+                                          AutoGenerateColumns="False"
+                                          Width="500"
+                                          Height="177"
+                                          BorderBrush="#FF116DFF"
+                                          BorderThickness="1"
+                                          IsReadOnly="True">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Skill"
+                                                            Binding="{Binding Skill.SkillName}"
+                                                            Width="*" />
+                                        <DataGridTemplateColumn Header="Level"
+                                                                Width="*">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock VerticalAlignment="Center">
+                                                        <TextBlock.Style>
+                                                            <Style TargetType="TextBlock">
+                                                                <Setter Property="Text"
+                                                                        Value="Unknown" />
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding Level}"
+                                                                                 Value="1">
+                                                                        <Setter Property="Text"
+                                                                                Value="Beginner" />
+                                                                    </DataTrigger>
+                                                                    <DataTrigger Binding="{Binding Level}"
+                                                                                 Value="2">
+                                                                        <Setter Property="Text"
+                                                                                Value="Intermediate" />
+                                                                    </DataTrigger>
+                                                                    <DataTrigger Binding="{Binding Level}"
+                                                                                 Value="3">
+                                                                        <Setter Property="Text"
+                                                                                Value="Advanced" />
+                                                                    </DataTrigger>
+                                                                    <DataTrigger Binding="{Binding Level}"
+                                                                                 Value="4">
+                                                                        <Setter Property="Text"
+                                                                                Value="Expert" />
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </TextBlock.Style></TextBlock>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Right">
+                                    <Button Content="Add"
+                                            Width="80"
+                                            Height="30"
+                                            Margin="0,5,0,0"
+                                            Background="#FF116DFF"
+                                            Foreground="White"
+                                            HorizontalAlignment="Right"
+                                            Click="AddSkill_Click" />
+                                    <Button Content="Edit"
+                                            Width="80"
+                                            Height="30"
+                                            Margin="15,5,0,0"
+                                            Background="#74CE53"
+                                            Foreground="White"
+                                            HorizontalAlignment="Right"
+                                            Click="EditSkill_Click" />
+                                    <Button Content="Delete"
+                                            Width="80"
+                                            Height="30"
+                                            Margin="15,5,0,0"
+                                            Background="#D73617"
+                                            Foreground="White"
+                                            HorizontalAlignment="Right"
+                                            Click="DeleteSkill_Click" />
+                                </StackPanel>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </TabItem>
+                    <TabItem x:Name="ManageJob"
+                             Header="Manage Job">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!-- Create Section -->
+                            <StackPanel Orientation="Vertical"
+                                        Margin="20">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="278*" />
+                                        <ColumnDefinition Width="186*" />
+                                        <ColumnDefinition Width="207*" />
+                                        <ColumnDefinition Width="419*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <StackPanel Grid.Row="0"
+                                                Grid.Column="0"
+                                                Margin="0,0,10,0">
+                                        <Label Content="Job Title:"
+                                               VerticalAlignment="Center" />
+                                        <TextBox x:Name="JobTitleTextBox"
+                                                 Margin="0,5,0,0" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="0"
+                                                Grid.Column="1"
+                                                Margin="5,0,5,0">
+                                        <Label Content="Salary:"
+                                               VerticalAlignment="Center" />
+                                        <TextBox x:Name="SalaryTextBox"
+                                                 Margin="0,5,0,0" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="1"
+                                                Grid.Column="2"
+                                                Margin="10,10,0,10">
+                                        <Label Content="Application Deadline:"
+                                               VerticalAlignment="Center" />
+                                        <DatePicker x:Name="DeadlineDatePicker"
+                                                    Margin="0,5,0,0" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="1"
+                                                Grid.Column="0"
+                                                Margin="0,10,10,0">
+                                        <Label Content="Description:"
+                                               VerticalAlignment="Center" />
+                                        <TextBox x:Name="DescriptionTextBox"
+                                                 TextWrapping="Wrap"
+                                                 Height="80"
+                                                 Margin="0,5,0,0" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="1"
+                                                Grid.Column="1"
+                                                Margin="5,10,5,0">
+                                        <Label Content="Location:"
+                                               VerticalAlignment="Center" />
+                                        <ComboBox x:Name="LocationComboBox"
+                                                  Margin="0,5,0,0"
+                                                  Width="149" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="0"
+                                                Grid.Column="2"
+                                                Margin="10,0,0,10">
+                                        <Label Content="Currency Code:"
+                                               VerticalAlignment="Center" />
+                                        <ComboBox x:Name="CurrencyComboBox"
+                                                  Margin="0,5,0,0">
+                                            <ComboBoxItem Content="VND" />
+                                            <ComboBoxItem Content="USD" />
+                                        </ComboBox>
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="0"
+                                                Grid.Column="3"
+                                                Grid.RowSpan="3">
+                                        <Label Content="Skills:"
+                                               VerticalAlignment="Center" />
+                                        <ListBox x:Name="SkillListBox"
+                                                 Margin="10"
+                                                 FontSize="10"
+                                                 Height="190">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <CheckBox Content="{Binding SkillName}"
+                                                              IsChecked="{Binding IsSelected}"
+                                                              Checked="SkillChecked"
+                                                              Unchecked="SkillUnchecked" />
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="2"
+                                                Grid.Column="1"
+                                                Grid.ColumnSpan="2">
+                                        <Label Margin="10,0,0,0">Skills</Label>
+                                        <TextBlock x:Name="SelectedSkillsTextBlock"
+                                                   Margin="10"
+                                                   TextWrapping="Wrap" />
+                                    </StackPanel>
+                                    <Button Grid.Row="2"
+                                            Grid.Column="0"
+                                            Content="Add"
+                                            Click="AddJob_Click"
+                                            Height="34"
+                                            Width="71"
+                                            Margin="0,17,0,0"
+                                            VerticalAlignment="Top"
+                                            Background="#23a15b"
+                                            Foreground="White" />
+                                    <Button Grid.Row="2"
+                                            Grid.Column="0"
+                                            Content="Edit"
+                                            Click="EditJob_Click"
+                                            Height="34"
+                                            Width="76"
+                                            Margin="93,17,0,0"
+                                            VerticalAlignment="Top"
+                                            Background="#FF8C00"
+                                            Foreground="White" />
+                                    <Button Grid.Row="2"
+                                            Grid.Column="0"
+                                            Content="Delete"
+                                            Click="DeleteJob_Click"
+                                            Height="34"
+                                            Width="78"
+                                            Margin="190,17,0,0"
+                                            VerticalAlignment="Top"
+                                            Background="#E42112"
+                                            Foreground="white" />
+                                </Grid>
+                            </StackPanel>
+                            <!-- Read/Update/Delete Section -->
+                            <DataGrid x:Name="ManageJobDataGrid"
+                                      Grid.Row="1"
+                                      Margin="0,10,0,0"
+                                      Background="#FAFAFA"
+                                      AutoGenerateColumns="False"
+                                      CanUserAddRows="False"
+                                      IsReadOnly="True"
+                                      SelectionMode="Single"
+                                      SelectionChanged="JobDataGrid_SelectionChanged">
+                                <DataGrid.CellStyle>
+                                    <Style TargetType="DataGridCell">
+                                        <Setter Property="BorderThickness"
+                                                Value="0,0,1,1" />
+                                        <Setter Property="BorderBrush"
+                                                Value="Gray" />
+                                        <Setter Property="Padding"
+                                                Value="5" />
+                                    </Style>
+                                </DataGrid.CellStyle>
+                                <DataGrid.Resources>
+                                    <Style TargetType="DataGridColumnHeader">
+                                        <Setter Property="Height"
+                                                Value="30" />
+                                        <Setter Property="Background"
+                                                Value="#007ACC" />
+                                        <Setter Property="Foreground"
+                                                Value="White" />
+                                        <Setter Property="FontWeight"
+                                                Value="SemiBold" />
+                                        <Setter Property="HorizontalContentAlignment"
+                                                Value="Center" />
+                                    </Style>
+                                </DataGrid.Resources>
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Header="Job ID"
+                                                            Width="0.5*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding JobId}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Job Title"
+                                                            Width="0.8*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding JobTitle}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Description"
+                                                            Width="2*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding JobDescription}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Skills"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding JobSkills, Converter={StaticResource SkillsConverter}}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Location"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Location}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Salary"
+                                                            Width="0.7*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Salary, StringFormat=C0}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Currency"
+                                                            Width="0.5*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding CurrencyCode}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Application deadline"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding ApplicationDeadline, StringFormat='{}{0:dd/MM/yyyy}'}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="ManageApplicants"
+                             Header="Manage Applicants">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"
+                                               MinHeight="81" />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid VerticalAlignment="Center"
+                                  Height="34">
+                                <Button x:Name="ViewProfileBtn"
+                                        Content="View Profile"
+                                        Margin="66,0,0,0"
+                                        Click="ViewProfile_Click" />
+                                <Button x:Name="AcceptBtn"
+                                        Content="Accept"
+                                        Margin="779,0,0,0"
+                                        Background="#23a15b"
+                                        Foreground="White"
+                                        Click="Accept_Click"
+                                        Width="75" />
+                                <Button x:Name="RejectBtn"
+                                        Content="Reject"
+                                        Margin="877,0,0,0"
+                                        Background="#E42112"
+                                        Foreground="white"
+                                        Width="77"
+                                        Click="Reject_Click" />
+                                <Button x:Name="OnHoldBtn"
+                                        Content="On Hold"
+                                        Margin="980,0,0,0"
+                                        Background="#FFE0A833"
+                                        Foreground="White"
+                                        Width="85"
+                                        Click="OnHold_Click" />
+                            </Grid>
+                            <DataGrid x:Name="ManageApplicantDataGrid"
+                                      Grid.Row="1"
+                                      Margin="0,0,0,10"
+                                      Background="#FAFAFA"
+                                      AutoGenerateColumns="False"
+                                      CanUserAddRows="False"
+                                      IsReadOnly="True"
+                                      SelectionMode="Single"
+                                      SelectionChanged="ManageApplicantDataGrid_SelectionChanged">
+                                <DataGrid.CellStyle>
+                                    <Style TargetType="DataGridCell">
+                                        <Setter Property="BorderThickness"
+                                                Value="0,0,1,1" />
+                                        <Setter Property="BorderBrush"
+                                                Value="Gray" />
+                                        <Setter Property="Padding"
+                                                Value="5" />
+                                    </Style>
+                                </DataGrid.CellStyle>
+                                <DataGrid.Resources>
+                                    <Style TargetType="DataGridColumnHeader">
+                                        <Setter Property="Height"
+                                                Value="30" />
+                                        <Setter Property="Background"
+                                                Value="#007ACC" />
+                                        <Setter Property="Foreground"
+                                                Value="White" />
+                                        <Setter Property="FontWeight"
+                                                Value="SemiBold" />
+                                        <Setter Property="HorizontalContentAlignment"
+                                                Value="Center" />
+                                    </Style>
+                                </DataGrid.Resources>
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Header="Applicant name"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Member.User.Name}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Job ID"
+                                                            Width="0.2*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Job.JobId}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Job title"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Job.JobTitle}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Application date"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding ApplicationDate}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Status"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Status}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="View CV"
+                                                            Width="100">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Button Content="View CV"
+                                                        Click="ViewCVButton_Click"
+                                                        Tag="{Binding CvFilePath}"
+                                                        Margin="5,5,5,5"
+                                                        FontSize="12"
+                                                        Cursor="Hand" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="InterviewScheduleCompany"
+                             Header="Manage Interview">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"
+                                               MinHeight="74" />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Button x:Name="CompanyCompleteBtn"
+                                    Content="Complete"
+                                    Click="Complete_Click"
+                                    Margin="852,0,0,0"
+                                    Width="92" />
+                            <Button x:Name="CompanyNoShowBtn"
+                                    Content="No Show"
+                                    Margin="976,0,0,0"
+                                    Click="NoShow_Click"
+                                    Width="92" />
+                            <DataGrid x:Name="ManageInterviewDataGrid"
+                                      Grid.Row="1"
+                                      Margin="0,0,10,10"
+                                      Background="#FAFAFA"
+                                      AutoGenerateColumns="False"
+                                      CanUserAddRows="False"
+                                      IsReadOnly="True"
+                                      SelectionMode="Single"
+                                      SelectionChanged="CompanyInterviewDataGrid_SelectionChanged">
+                                <DataGrid.CellStyle>
+                                    <Style TargetType="DataGridCell">
+                                        <Setter Property="BorderThickness"
+                                                Value="0,0,1,1" />
+                                        <Setter Property="BorderBrush"
+                                                Value="Gray" />
+                                        <Setter Property="Padding"
+                                                Value="5" />
+                                    </Style>
+                                </DataGrid.CellStyle>
+                                <DataGrid.Resources>
+                                    <Style TargetType="DataGridColumnHeader">
+                                        <Setter Property="Height"
+                                                Value="30" />
+                                        <Setter Property="Background"
+                                                Value="#007ACC" />
+                                        <Setter Property="Foreground"
+                                                Value="White" />
+                                        <Setter Property="FontWeight"
+                                                Value="SemiBold" />
+                                        <Setter Property="HorizontalContentAlignment"
+                                                Value="Center" />
+                                    </Style>
+                                </DataGrid.Resources>
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Header="Applicant name"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding JobApplication.Member.User.Name}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Job ID"
+                                                            Width="0.5*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding JobApplication.Job.JobId}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Job title"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding JobApplication.Job.JobTitle}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Interview date"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding InterviewDate}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Status"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Status}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="CompanyProfile"
+                             Header="Company Profile">
+                        <StackPanel Margin="309,0,309,0"
+                                    Width="512"
+                                    Height="592">
+                            <TextBlock Text="Account Information"
+                                       Margin="0,10,0,0"
+                                       FontWeight="SemiBold"
+                                       FontSize="16" />
+                            <Grid Margin="0,20,0,20"
+                                  Height="164">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <!-- Left Column -->
+                                <StackPanel Grid.Column="0"
+                                            Grid.Row="0"
+                                            Margin="7,-10,10,20">
+                                    <TextBlock Text="Name:"
+                                               FontWeight="Bold"
+                                               Margin="0,10,0,5" />
+                                    <TextBox x:Name="AccCompanyNameTextBox"
+                                             Width="239"
+                                             Height="30"
+                                             Padding="5"
+                                             BorderBrush="#FF116DFF"
+                                             BorderThickness="1" />
+                                </StackPanel>
+                                <StackPanel Grid.Column="1"
+                                            Grid.Row="0"
+                                            Margin="7,-10,5,14">
+                                    <TextBlock Text="Password:"
+                                               FontWeight="Bold"
+                                               Margin="0,10,0,5" />
+                                    <PasswordBox x:Name="AccCompanyPasswordBox"
+                                                 Width="239"
+                                                 Height="32"
+                                                 Padding="5"
+                                                 BorderBrush="#FF116DFF"
+                                                 BorderThickness="1" />
+                                </StackPanel>
+                                <!-- Left Column -->
+                                <StackPanel Grid.Column="0"
+                                            Margin="7,68,10,27"
+                                            Grid.RowSpan="3">
+                                    <!-- Email -->
+                                    <TextBlock Text="Email:"
+                                               FontWeight="Bold"
+                                               Margin="0,10,0,5" />
+                                    <TextBox x:Name="AccCompanyEmailTextBox"
+                                             Width="239"
+                                             Height="30"
+                                             Padding="5"
+                                             BorderBrush="#FF116DFF"
+                                             BorderThickness="1" />
+                                </StackPanel>
+                                <!-- Right Column -->
+                                <!--<StackPanel Grid.Column="1"
+                                            Margin="10,68,5,21"
+                                            Grid.RowSpan="3">
+                                    <TextBlock Text="Company Industry:"
+                                               FontWeight="Bold"
+                                               Margin="0,10,0,5" />
+                                    <TextBox x:Name="IndustryTextBox"
+                                             Width="239"
+                                             Height="30"
+                                             Padding="5"
+                                             BorderBrush="#FF116DFF"
+                                             BorderThickness="1" />
+                                    -->
+                                <!-- Phone -->
+                                <!--
+                                </StackPanel>-->
+                                <StackPanel Grid.Row="1"
+                                            Grid.Column="1"
+                                            VerticalAlignment="Bottom">
+                                    <Button HorizontalAlignment="Right"
+                                            Content="Save"
+                                            Background="#FF116DFF"
+                                            Foreground="White"
+                                            Width="67"
+                                            Click="SaveAccCompanyProfile_Click" />
+                                </StackPanel>
+                            </Grid>
+                            <TextBlock Text="Company Information"
+                                       FontWeight="SemiBold"
+                                       FontSize="16" />
+                            <Grid Margin="0,20,0,20"
+                                  Height="253">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <StackPanel Grid.Row="0"
+                                            Grid.Column="0">
+                                    <TextBlock Text="Company Name:"
+                                               FontWeight="Bold"
+                                               Margin="10,10,0,5" />
+                                    <TextBox x:Name="CompanyNameTextBox"
+                                             Width="239"
+                                             Height="30"
+                                             Padding="5"
+                                             BorderBrush="#FF116DFF"
+                                             BorderThickness="1" />
+                                </StackPanel>
+                                <StackPanel Grid.Row="0"
+                                            Grid.Column="1"
+                                            Margin="10,0,0,0">
+                                    <TextBlock Text="Country:"
+                                               FontWeight="Bold"
+                                               Margin="0,10,0,5" />
+                                    <ComboBox x:Name="CountryTextBox"
+                                              Width="239"
+                                              Height="30"
+                                              Padding="5"
+                                              BorderBrush="#FF116DFF"
+                                              BorderThickness="1" />
+                                </StackPanel>
+                                <StackPanel Grid.Row="1"
+                                            Grid.Column="0"
+                                            Margin="10,0,0,0">
+                                    <TextBlock Text="Industry:"
+                                               FontWeight="Bold"
+                                               Margin="0,10,0,5" />
+                                    <TextBox x:Name="IndustryTextBox"
+                                             Width="236"
+                                             Height="30"
+                                             Padding="5"
+                                             BorderBrush="#FF116DFF"
+                                             Margin="0,0,5,0"
+                                             BorderThickness="1" />
+                                </StackPanel>
+                                <StackPanel Grid.Row="2"
+                                            Grid.Column="0"
+                                            Margin="10,0,0,0">
+                                    <TextBlock Text="Company Type:"
+                                               FontWeight="Bold"
+                                               Margin="0,10,0,5" />
+                                    <TextBox x:Name="CompanyTypeTextBox"
+                                             Width="239"
+                                             Height="30"
+                                             Padding="5"
+                                             BorderBrush="#FF116DFF"
+                                             Margin="0,0,5,0"
+                                             BorderThickness="1" />
+                                </StackPanel>
+                                <StackPanel Grid.Row="1"
+                                            Grid.RowSpan="2"
+                                            Grid.Column="1"
+                                            Margin="10,0,0,0">
+                                    <TextBlock Text="Description:"
+                                               FontWeight="Bold"
+                                               Margin="0,10,0,5" />
+                                    <TextBox x:Name="CompanyDescriptionTextBox"
+                                             Width="238"
+                                             Height="116"
+                                             Padding="5"
+                                             BorderBrush="#FF116DFF"
+                                             TextWrapping="Wrap"
+                                             BorderThickness="1" />
+                                </StackPanel>
+                            </Grid>
+                            <Button HorizontalAlignment="Right"
+                                    Background="#FF116DFF"
+                                    Foreground="White"
+                                    Content="Save"
+                                    Width="67"
+                                    Click="SaveCompanyProfile_Click" />
+                        </StackPanel>
+                    </TabItem>
+                </TabControl>
+            </Grid>
+            <ui:LayoutPanel Margin="0,0,0,679"
+                            Grid.RowSpan="2">
+                <TextBlock Text="JobFinder"
+                           VerticalAlignment="Top"
+                           Foreground="#FF2E2E2E"
+                           FontSize="22"
+                           Margin="75,28,961,0"
+                           FontWeight="SemiBold"
+                           Grid.RowSpan="2"  />
+                <TextBlock x:Name="Username"
+                           Text="- Username "
+                           Foreground="#FF2E2E2E"
+                           FontSize="22"
+                           Margin="194,28,533,7"
+                           FontWeight="SemiBold"
+                           Grid.RowSpan="2" />
+            </ui:LayoutPanel>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,206 @@
+﻿<Window x:Class="Group8_WPF.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group8_WPF"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:ThemeManager.RequestedTheme="Light"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title=""
+        Height="500"
+        Width="600"
+        MouseDown="Window_MouseDown"
+        KeyDown="Window_KeyDown"
+        ResizeMode="CanMinimize"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent">
+    <!--<Window.Background>
+        <ImageBrush ImageSource="Images/1.jfif" />
+        
+    </Window.Background>-->
+    <Border BorderThickness="3"
+            CornerRadius="15"
+            BorderBrush="#73A9AD"
+            Background="#FFEEEEEE">
+        <Grid HorizontalAlignment="Center"
+              Width="900">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid Margin="-149,0,149,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="35" />
+                    <ColumnDefinition Width="35" />
+                    <ColumnDefinition Width="8" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="1"
+                        BorderThickness="0"
+                        Foreground="White"
+                        FontSize="20"
+                        Click="btnMinimize_Click"
+                        Focusable="False"
+                        Cursor="Hand">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background"
+                                    Value="#28AEED" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver"
+                                         Value="True">
+                                    <Setter Property="Background"
+                                            Value="#278BEF" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="30"
+                                    Height="30"
+                                    CornerRadius="30"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center" />
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <Image Source="Images/minus.png"
+                           Width="13"
+                           Height="13" />
+                </Button>
+                <Button Grid.Column="2"
+                        BorderThickness="0"
+                        Foreground="White"
+                        FontSize="15"
+                        Click="btnClose_Click"
+                        Focusable="False"
+                        Cursor="Hand">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background"
+                                    Value="#DA34AE" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver"
+                                         Value="True">
+                                    <Setter Property="Background"
+                                            Value="#C62DAE" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="30"
+                                    Height="30"
+                                    CornerRadius="30"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center" />
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <Image Source="Images/xmark.png"
+                           Width="12" />
+                </Button>
+            </Grid>
+            <!--<StackPanel 
+             Grid.Row="1"    
+                    Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Width="153">
+                <TextBlock Margin="29,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="21" FontFamily="Poppins" FontSize="36" FontWeight="Bold" Foreground="#FFF18300"><Run Text="F"/><LineBreak/><Run/></TextBlock>
+                <TextBlock Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="103" FontFamily="Poppins" FontSize="36" Text="Hotel" FontWeight="Bold" Foreground="White"/>
+            </StackPanel>-->
+            <TextBlock Grid.Row="1"
+                       TextWrapping="Wrap"
+                       Text="Login"
+                       VerticalAlignment="Top"
+                       Height="62"
+                       Width="112"
+                       FontSize="36"
+                       HorizontalAlignment="Center"
+                       Margin="0,42,0,0"
+                       Foreground="Black" />
+            <TextBox Grid.Row="1"
+                     Margin="301,147,0,0"
+                     VerticalAlignment="Top"
+                     Width="295"
+                     Height="46"
+                     HorizontalAlignment="Left"
+                     FontSize="18"
+                     VerticalContentAlignment="Center"
+                     Padding="10,0,10,0"
+                     x:Name="Email">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius"
+                                Value="5" />
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Label Grid.Row="1"
+                   Content="Email"
+                   HorizontalAlignment="Left"
+                   Margin="302,113,0,0"
+                   VerticalAlignment="Top"
+                   Height="34"
+                   Width="66"
+                   FontSize="18"
+                   Foreground="Black"
+                   FontFamily="Brush Script MT" />
+            <Label Grid.Row="1"
+                   Content="Password"
+                   HorizontalAlignment="Left"
+                   Margin="301,0,0,0"
+                   VerticalAlignment="Center"
+                   Height="28"
+                   Width="99"
+                   FontSize="18"
+                   Foreground="Black" />
+            <PasswordBox Grid.Row="1"
+                         VerticalAlignment="Top"
+                         Width="296"
+                         Height="46"
+                         HorizontalAlignment="Center"
+                         FontSize="18"
+                         VerticalContentAlignment="Center"
+                         Padding="10,10,10,10"
+                         Margin="0,243,0,0"
+                         x:Name="Password"></PasswordBox>
+            <Button Grid.Row="1"
+                    Content="Log in"
+                    Margin="301,316,0,0"
+                    VerticalAlignment="Top"
+                    Width="295"
+                    Height="48"
+                    FontSize="18"
+                    Background="#FFDC5857"
+                    Foreground="White"
+                    FontWeight="SemiBold"
+                    Cursor="Hand"
+                    Click="HandleLogin">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="0"
+                                CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <!--<Border Grid.Row="1"
+                    BorderBrush="#FF565656"
+                    Margin="255,64,254,82"
+                    CornerRadius="20"
+                    Background="#FF9ECBCC"
+                    Panel.ZIndex="-1"
+                    BorderThickness="0.3"></Border>-->
+        </Grid>
+    </Border>
+</Window>
