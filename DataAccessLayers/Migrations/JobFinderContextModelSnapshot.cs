@@ -351,6 +351,9 @@ namespace DataAccessLayers.Migrations
                     b.Property<int>("RoleId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.HasKey("UserId");
 
                     b.HasIndex("CompanyId");

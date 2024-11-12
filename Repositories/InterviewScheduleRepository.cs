@@ -30,7 +30,7 @@ namespace Repositories
             return InterviewScheduleDAO.GetInterviewSchedules();
         }
 
-        public void UpdateInterviewSchedule(InterviewSchedule interviewSchedule)
+        public void UpdateInterviewSchedule(InterviewSchedule interviewSchedule, string? contition = null)
         {
             InterviewScheduleDAO.UpdateInterviewSchedule(interviewSchedule);
         }

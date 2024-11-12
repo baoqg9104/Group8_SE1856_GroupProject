@@ -43,7 +43,7 @@ namespace DataAccessLayers
             var existJobApplication = context.JobApplications
                 .Any(ja => ja.JobId == jobApplication.JobId
                 && ja.MemberId == jobApplication.MemberId
-                && (ja.Status != "Withdrawn" && ja.Status != "Rejected")
+                && (ja.Status != "Withdrawn" && ja.Status != "Rejected" && ja.Status != "Canceled")
                 );
 
             if (existJobApplication)

@@ -13,6 +13,9 @@
     <Compile Update="AddMemberSkillWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AddMemberWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="AddWorkExperienceWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -49,6 +52,12 @@
     <Compile Update="SignupWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UpdateMemberWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewDeletedMembersWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ViewProfileWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -58,6 +67,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AddMemberSkillWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddMemberWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AddWorkExperienceWindow.xaml">
@@ -94,6 +106,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SignupWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UpdateMemberWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewDeletedMembersWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ViewProfileWindow.xaml">

@@ -19,7 +19,9 @@ namespace DataAccessLayers
             try
             {
                 using var context = new JobFinderContext();
-                list = context.Members.ToList();
+                list = context.Members
+                    .Include(x => x.User)
+                    .ToList();
             }
             catch (Exception ex)
             {

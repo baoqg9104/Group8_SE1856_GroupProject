@@ -18,6 +18,14 @@
         Loaded="Window_Loaded">
     <Window.Resources>
         <local:SkillsConverter x:Key="SkillsConverter" />
+        <local:GenderConverter x:Key="GenderConverter" />
+        <Color x:Key="PrimaryColor">#1976D2</Color>
+        <Color x:Key="PrimaryLightColor">#2196F3</Color>
+        <Color x:Key="PrimaryDarkColor">#1565C0</Color>
+        <Color x:Key="AccentColor">#FFC107</Color>
+        <Color x:Key="TextPrimaryColor">#212121</Color>
+        <Color x:Key="TextSecondaryColor">#757575</Color>
+        <Color x:Key="DividerColor">#BDBDBD</Color>
     </Window.Resources>
     <Border CornerRadius="12"
             Background="#FAFAFA">
@@ -602,14 +610,21 @@
                                                MinHeight="74" />
                                 <RowDefinition />
                             </Grid.RowDefinitions>
-                            <StackPanel VerticalAlignment="Center"
-                                        HorizontalAlignment="Right"
-                                        Height="34">
+                            <Canvas Height="34">
                                 <Button x:Name="ConfirmBtn"
                                         Content="Confirm"
-                                        Margin="0,0,100,0"
-                                        Click="Confirm_Click" />
-                            </StackPanel>
+                                        Click="Confirm_Click"
+                                        Canvas.Left="804"
+                                        Background="#23a15b"
+                                        Foreground="White" />
+                                <Button x:Name="CancelBtn"
+                                        Click="Cancel_Click"
+                                        Canvas.Left="903"
+                                        Content="Cancel"
+                                        Width="75"
+                                        Background="#E42112"
+                                        Foreground="White" />
+                            </Canvas>
                             <DataGrid x:Name="InterviewDataGrid"
                                       Grid.Row="1"
                                       Margin="0,0,10,10"
@@ -1287,6 +1302,52 @@
                                       IsReadOnly="True"
                                       SelectionMode="Single"
                                       SelectionChanged="ManageApplicantDataGrid_SelectionChanged">
+                                <!-- Group Style with combined JobId and JobTitle -->
+                                <DataGrid.GroupStyle>
+                                    <GroupStyle>
+                                        <GroupStyle.ContainerStyle>
+                                            <Style TargetType="{x:Type GroupItem}">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type GroupItem}">
+                                                            <StackPanel>
+                                                                <Border Background="#E3F2FD"
+                                                                        BorderBrush="#BBDEFB"
+                                                                        BorderThickness="0,0,0,1"
+                                                                        Margin="0,10,0,5"
+                                                                        Padding="8">
+                                                                    <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="Job ID: "
+                                                                                   FontWeight="SemiBold"
+                                                                                   Foreground="#1976D2" />
+                                                                        <TextBlock Text="{Binding Items[0].Job.JobId}"
+                                                                                   FontWeight="SemiBold"
+                                                                                   Foreground="#1976D2"
+                                                                                   Margin="0,0,15,0" />
+                                                                        <TextBlock Text="|    "
+                                                                                   FontWeight="Bold"
+                                                                                   Foreground="#1976D2" />
+                                                                        <TextBlock Text="{Binding Items[0].Job.JobTitle}"
+                                                                                   FontWeight="SemiBold"
+                                                                                   Foreground="#1976D2" />
+                                                                        <TextBlock Text=" ("
+                                                                                   Foreground="#1976D2"
+                                                                                   Margin="5,0,0,0" />
+                                                                        <TextBlock Text="{Binding ItemCount}"
+                                                                                   Foreground="#1976D2" />
+                                                                        <TextBlock Text=" Applications)"
+                                                                                   Foreground="#1976D2" />
+                                                                    </StackPanel>
+                                                                </Border>
+                                                                <ItemsPresenter />
+                                                            </StackPanel>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </GroupStyle.ContainerStyle>
+                                    </GroupStyle>
+                                </DataGrid.GroupStyle>
                                 <DataGrid.CellStyle>
                                     <Style TargetType="DataGridCell">
                                         <Setter Property="BorderThickness"
@@ -1322,26 +1383,6 @@
                                             </DataTemplate>
                                         </DataGridTemplateColumn.CellTemplate>
                                     </DataGridTemplateColumn>
-                                    <DataGridTemplateColumn Header="Job ID"
-                                                            Width="0.2*">
-                                        <DataGridTemplateColumn.CellTemplate>
-                                            <DataTemplate>
-                                                <TextBlock Text="{Binding Job.JobId}"
-                                                           TextWrapping="Wrap"
-                                                           Padding="5" />
-                                            </DataTemplate>
-                                        </DataGridTemplateColumn.CellTemplate>
-                                    </DataGridTemplateColumn>
-                                    <DataGridTemplateColumn Header="Job title"
-                                                            Width="*">
-                                        <DataGridTemplateColumn.CellTemplate>
-                                            <DataTemplate>
-                                                <TextBlock Text="{Binding Job.JobTitle}"
-                                                           TextWrapping="Wrap"
-                                                           Padding="5" />
-                                            </DataTemplate>
-                                        </DataGridTemplateColumn.CellTemplate>
-                                    </DataGridTemplateColumn>
                                     <DataGridTemplateColumn Header="Application date"
                                                             Width="*">
                                         <DataGridTemplateColumn.CellTemplate>
@@ -1358,6 +1399,7 @@
                                             <DataTemplate>
                                                 <TextBlock Text="{Binding Status}"
                                                            TextWrapping="Wrap"
+                                                           TextAlignment="Center"
                                                            Padding="5" />
                                             </DataTemplate>
                                         </DataGridTemplateColumn.CellTemplate>
@@ -1369,7 +1411,7 @@
                                                 <Button Content="View CV"
                                                         Click="ViewCVButton_Click"
                                                         Tag="{Binding CvFilePath}"
-                                                        Margin="5,5,5,5"
+                                                        Margin="5"
                                                         FontSize="12"
                                                         Cursor="Hand" />
                                             </DataTemplate>
@@ -1665,6 +1707,171 @@
                                     Click="SaveCompanyProfile_Click" />
                         </StackPanel>
                     </TabItem>
+                    <TabItem x:Name="ManageMember"
+                             Header="Manage Member">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"
+                                               MinHeight="81" />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid VerticalAlignment="Center"
+                                  Height="34">
+                                <Button 
+                                    x:Name="AddMemberBtn"
+                                        Content="Add"
+                                        Margin="66,0,0,0"
+                                        Click="AddMember_Click"
+                                        Width="65" />
+                                <Button x:Name="ActivateMemberBtn"
+                                        Content="Activate"
+                                        Margin="779,0,0,0"
+                                        Background="#23a15b"
+                                        Foreground="White"
+                                        Click="ActiveMember_Click"
+                                        Width="75" />
+                                <Button 
+                                    x:Name="BanMemberBtn"
+                                        Content="Ban"
+                                        Margin="877,0,0,0"
+                                        Background="#E42112"
+                                        Foreground="white"
+                                        Width="77"
+                                        Click="BanMember_Click" />
+                                
+                                <Button
+                                    x:Name="UpdateMemberBtn" Content="Update"
+                                        Margin="160,0,0,0"
+                                        Click="UpdateMember_Click"
+                                        Width="74" />
+                                <Button x:Name="DeleteMemberBtn" Content="Delete"
+                                        Margin="265,0,0,0"
+                                        Click="DeleteMember_Click"
+                                        Width="65" />
+                                <Button x:Name="ViewDeletedMembers"
+                                        Content="View Deleted"
+                                        Margin="519,0,0,0"
+                                        Click="ViewDeletedMembers_Click"
+                                        Width="118" />
+                            </Grid>
+                            <DataGrid x:Name="ManageMemberDataGrid"
+                                      Grid.Row="1"
+                                      Margin="0,0,10,10"
+                                      Background="#FAFAFA"
+                                      AutoGenerateColumns="False"
+                                      CanUserAddRows="False"
+                                      IsReadOnly="True"
+                                      SelectionMode="Single"
+                                      SelectionChanged="ManageMemberDataGrid_SelectionChanged">
+                                <DataGrid.CellStyle>
+                                    <Style TargetType="DataGridCell">
+                                        <Setter Property="BorderThickness"
+                                                Value="0,0,1,1" />
+                                        <Setter Property="BorderBrush"
+                                                Value="Gray" />
+                                        <Setter Property="Padding"
+                                                Value="5" />
+                                    </Style>
+                                </DataGrid.CellStyle>
+                                <DataGrid.Resources>
+                                    <Style TargetType="DataGridColumnHeader">
+                                        <Setter Property="Height"
+                                                Value="30" />
+                                        <Setter Property="Background"
+                                                Value="#007ACC" />
+                                        <Setter Property="Foreground"
+                                                Value="White" />
+                                        <Setter Property="FontWeight"
+                                                Value="SemiBold" />
+                                        <Setter Property="HorizontalContentAlignment"
+                                                Value="Center" />
+                                    </Style>
+                                </DataGrid.Resources>
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Header="Member ID"
+                                                            Width="0.5*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding MemberId}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Member Name"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding User.Name}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Email"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding User.Email}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Password"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding User.Password}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Date of birth"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding DateOfBirth, StringFormat='{}{0:dd/MM/yyyy}'}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Phone"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Phone}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Gender"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Gender, Converter={StaticResource GenderConverter}}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Status"
+                                                            Width="*">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding User.Status}"
+                                                           TextWrapping="Wrap"
+                                                           Padding="5" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </TabItem>
                 </TabControl>
             </Grid>
             <ui:LayoutPanel Margin="0,0,0,679"
@@ -1675,7 +1882,7 @@
                            FontSize="22"
                            Margin="75,28,961,0"
                            FontWeight="SemiBold"
-                           Grid.RowSpan="2"  />
+                           Grid.RowSpan="2" />
                 <TextBlock x:Name="Username"
                            Text="- Username "
                            Foreground="#FF2E2E2E"

@@ -37,7 +37,7 @@ namespace Services
             return interviewScheduleRepository.GetInterviewSchedules();
         }
 
-        public void UpdateInterviewSchedule(InterviewSchedule interviewSchedule)
+        public void UpdateInterviewSchedule(InterviewSchedule interviewSchedule, string? contition = null)
         {
             interviewScheduleRepository.UpdateInterviewSchedule(interviewSchedule);
         }

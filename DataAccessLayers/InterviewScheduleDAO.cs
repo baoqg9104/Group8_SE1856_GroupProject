@@ -61,14 +61,20 @@ namespace DataAccessLayers
             context.SaveChanges();
         }
 
-        public static void UpdateInterviewSchedule(InterviewSchedule interviewSchedule)
+        public static void UpdateInterviewSchedule(InterviewSchedule interviewSchedule, string? contition = null)
         {
             using var context = new JobFinderContext();
 
-            if (interviewSchedule.Status == "Confirmed" && DateTime.Now > interviewSchedule.InterviewDate)
+            if (interviewSchedule.Status == "Confirmed" && DateTime.Now > interviewSchedule.InterviewDate.AddHours(-24))
             {
                 throw new Exception("Overdue to confirm");
             }
+
+            if (interviewSchedule.Status == "Canceled" && contition != null && DateTime.Now > interviewSchedule.InterviewDate.AddHours(-24))
+            {
+                throw new Exception("Overdue to cancel");
+            }
+
 
             if (interviewSchedule.Status == "Completed" && DateTime.Now < interviewSchedule.InterviewDate)
             {

@@ -322,9 +322,16 @@ C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\Group8_WPF.AssemblyInfoInputs.cache
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\Group8_WPF.AssemblyInfo.cs
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\Group8_WPF.csproj.CoreCompileInputs.cache
+C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\Group8_WPF.sourcelink.json
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\Group8_WPF.csproj.Up2Date
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\Group8_WPF.dll
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\refint\Group8_WPF.dll
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\Group8_WPF.pdb
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\Group8_WPF.genruntimeconfig.cache
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\ref\Group8_WPF.dll
+C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\AddMemberWindow.g.cs
+C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\AddMemberWindow.baml
+C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\UpdateMemberWindow.g.cs
+C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\UpdateMemberWindow.baml
+C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\ViewDeletedMembersWindow.g.cs
+C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\obj\Debug\net8.0-windows\ViewDeletedMembersWindow.baml

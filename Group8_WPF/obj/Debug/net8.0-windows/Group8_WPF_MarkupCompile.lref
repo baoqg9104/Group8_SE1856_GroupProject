@@ -2,6 +2,7 @@
 FC:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\App.xaml;;
 FC:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\AddEducationWindow.xaml;;
 FC:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\AddMemberSkillWindow.xaml;;
+FC:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\AddMemberWindow.xaml;;
 FC:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\AddWorkExperienceWindow.xaml;;
 FC:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\CompanyInfoWindow.xaml;;
 FC:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\EditEducationWindow.xaml;;
@@ -13,4 +14,6 @@ FC:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\LoginWind
 FC:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\MainWindow.xaml;;
 FC:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\SignupWindow.xaml;;
 FC:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\ViewProfileWindow.xaml;;
+FC:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\UpdateMemberWindow.xaml;;
+FC:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\ViewDeletedMembersWindow.xaml;;
 

@@ -17,3 +17,4 @@ C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Services\obj\Debug\ne
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Services\obj\Debug\net8.0\refint\Services.dll
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Services\obj\Debug\net8.0\Services.pdb
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Services\obj\Debug\net8.0\Services.sourcelink.json

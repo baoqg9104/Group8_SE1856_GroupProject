@@ -21,6 +21,7 @@ namespace BusinessObjects
 
         [ForeignKey("RoleId")]
         public Role Role { get; set; }
+        public UserStatus Status { get; set; }
 
         public virtual Admin Admin { get; set; }
         public virtual Member Member { get; set; }
@@ -28,5 +29,12 @@ namespace BusinessObjects
         [ForeignKey("CompanyId")]
         public virtual RecruitmentCompany RecruitmentCompany { get; set; }
 
+    }
+
+    public enum UserStatus
+    {
+        Active = 1,
+        Banned = 2,
+        Deleted = 3
     }
 }

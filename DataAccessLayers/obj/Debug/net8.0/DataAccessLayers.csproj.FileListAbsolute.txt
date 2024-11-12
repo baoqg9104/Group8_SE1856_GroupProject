@@ -13,3 +13,4 @@ C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\DataAccessLayers\obj\
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\DataAccessLayers\obj\Debug\net8.0\refint\DataAccessLayers.dll
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\DataAccessLayers\obj\Debug\net8.0\DataAccessLayers.pdb
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\DataAccessLayers\obj\Debug\net8.0\ref\DataAccessLayers.dll
+C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\DataAccessLayers\obj\Debug\net8.0\DataAccessLayers.sourcelink.json

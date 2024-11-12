@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\Group8_WPF\App.xaml
-151069114292
+18-945333076
 3228398178
-20-1200141015
+241213887522
 256-1881621360
-AddEducationWindow.xaml;AddMemberSkillWindow.xaml;AddWorkExperienceWindow.xaml;ApplyWindow.xaml;CompanyInfoWindow.xaml;CVViewerWindow.xaml;EditEducationWindow.xaml;EditJobWindow.xaml;EditMemberSkillWindow.xaml;EditWorkExperienceWindow.xaml;InterviewSchedulingWindow.xaml;LoginWindow.xaml;MainWindow.xaml;SignupWindow.xaml;ViewProfileWindow.xaml;
+AddEducationWindow.xaml;AddMemberSkillWindow.xaml;AddMemberWindow.xaml;AddWorkExperienceWindow.xaml;ApplyWindow.xaml;CompanyInfoWindow.xaml;CVViewerWindow.xaml;EditEducationWindow.xaml;EditJobWindow.xaml;EditMemberSkillWindow.xaml;EditWorkExperienceWindow.xaml;InterviewSchedulingWindow.xaml;LoginWindow.xaml;MainWindow.xaml;SignupWindow.xaml;UpdateMemberWindow.xaml;ViewDeletedMembersWindow.xaml;ViewProfileWindow.xaml;
 
 False
 

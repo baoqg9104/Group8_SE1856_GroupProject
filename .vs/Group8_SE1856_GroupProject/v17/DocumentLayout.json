@@ -3,8 +3,108 @@
   "WorkspaceRootPath": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\viewdeletedmemberswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\viewdeletedmemberswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\viewdeletedmemberswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\viewdeletedmemberswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\editeducationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\editeducationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\updatememberwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\updatememberwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\addmemberwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\addmemberwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\dataaccesslayers\\memberdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|solutionrelative:dataaccesslayers\\memberdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\dataaccesslayers\\dtos\\member\\updatememberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|solutionrelative:dataaccesslayers\\dtos\\member\\updatememberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\updatememberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\updatememberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\addmemberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\addmemberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\dataaccesslayers\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|solutionrelative:dataaccesslayers\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F75C2C5-C3D9-48CE-ABB7-B510D41999EA}|BusinessObjects\\BusinessObjects.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\businessobjects\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F75C2C5-C3D9-48CE-ABB7-B510D41999EA}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F75C2C5-C3D9-48CE-ABB7-B510D41999EA}|BusinessObjects\\BusinessObjects.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\businessobjects\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F75C2C5-C3D9-48CE-ABB7-B510D41999EA}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\addmemberskillwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\addmemberskillwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\dataaccesslayers\\jobapplicationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|solutionrelative:dataaccesslayers\\jobapplicationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{673A259F-2E19-4AF4-9063-C3F8346CE24E}|Services\\Services.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\services\\interviewscheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{673A259F-2E19-4AF4-9063-C3F8346CE24E}|Services\\Services.csproj|solutionrelative:services\\interviewscheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{673A259F-2E19-4AF4-9063-C3F8346CE24E}|Services\\Services.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\services\\iinterviewscheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{673A259F-2E19-4AF4-9063-C3F8346CE24E}|Services\\Services.csproj|solutionrelative:services\\iinterviewscheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0C2E898-387F-4B62-AF59-A2BB469D955D}|Repositories\\Repositories.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\repositories\\iinterviewschedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0C2E898-387F-4B62-AF59-A2BB469D955D}|Repositories\\Repositories.csproj|solutionrelative:repositories\\iinterviewschedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0C2E898-387F-4B62-AF59-A2BB469D955D}|Repositories\\Repositories.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\repositories\\interviewschedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0C2E898-387F-4B62-AF59-A2BB469D955D}|Repositories\\Repositories.csproj|solutionrelative:repositories\\interviewschedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\dataaccesslayers\\interviewscheduledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|solutionrelative:dataaccesslayers\\interviewscheduledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\genderconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\genderconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\skillsconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\skillsconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\Migrations\\20241112123244_24.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccessLayers\\Migrations\\20241112123244_24.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\signupwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\signupwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\interviewschedulingwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -19,14 +119,6 @@
       "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\signupwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\interviewschedulingwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\interviewschedulingwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,28 +127,8 @@
       "RelativeMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|solutionrelative:dataaccesslayers\\recruitmentcompanydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\dataaccesslayers\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|solutionrelative:dataaccesslayers\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\dataaccesslayers\\interviewscheduledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|solutionrelative:dataaccesslayers\\interviewscheduledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\dataaccesslayers\\jobapplicationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|solutionrelative:dataaccesslayers\\jobapplicationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{673A259F-2E19-4AF4-9063-C3F8346CE24E}|Services\\Services.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\services\\iinterviewscheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{673A259F-2E19-4AF4-9063-C3F8346CE24E}|Services\\Services.csproj|solutionrelative:services\\iinterviewscheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7F75C2C5-C3D9-48CE-ABB7-B510D41999EA}|BusinessObjects\\BusinessObjects.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\businessobjects\\interviewschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F75C2C5-C3D9-48CE-ABB7-B510D41999EA}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\interviewschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{673A259F-2E19-4AF4-9063-C3F8346CE24E}|Services\\Services.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\services\\interviewscheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{673A259F-2E19-4AF4-9063-C3F8346CE24E}|Services\\Services.csproj|solutionrelative:services\\interviewscheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\editworkexperiencewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -81,10 +153,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\cvviewerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\cvviewerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\editeducationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\editeducationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\editjobwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -127,10 +195,6 @@
       "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\skillitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\skillsconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\skillsconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\dataaccesslayers\\memberskilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|solutionrelative:dataaccesslayers\\memberskilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -151,10 +215,6 @@
       "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\applywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F75C2C5-C3D9-48CE-ABB7-B510D41999EA}|BusinessObjects\\BusinessObjects.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\businessobjects\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F75C2C5-C3D9-48CE-ABB7-B510D41999EA}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7F75C2C5-C3D9-48CE-ABB7-B510D41999EA}|BusinessObjects\\BusinessObjects.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\businessobjects\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F75C2C5-C3D9-48CE-ABB7-B510D41999EA}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -169,10 +229,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\addworkexperiencewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\addworkexperiencewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\group8_wpf\\addmemberskillwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2E9CACC4-8D29-451B-BB48-599600A85C7B}|Group8_WPF\\Group8_WPF.csproj|solutionrelative:group8_wpf\\addmemberskillwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAA81709-17E0-4A9A-A232-F72C894FB7F0}|DataAccessLayers\\DataAccessLayers.csproj|c:\\users\\giabaoz\\desktop\\prn212\\group8_se1856_groupproject\\dataaccesslayers\\skilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -229,8 +285,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 604,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 647,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -242,20 +298,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "JobApplicationDAO.cs",
-              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\JobApplicationDAO.cs",
-              "RelativeDocumentMoniker": "DataAccessLayers\\JobApplicationDAO.cs",
-              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\JobApplicationDAO.cs",
-              "RelativeToolTip": "DataAccessLayers\\JobApplicationDAO.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAQwBYAAAAxAAAA",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Group8_WPF\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Group8_WPF\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAF4GAAAAAAAAAAAwwG4GAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T16:10:28.109Z",
+              "WhenOpened": "2024-11-12T16:09:31.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "ViewDeletedMembersWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\ViewDeletedMembersWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Group8_WPF\\ViewDeletedMembersWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\ViewDeletedMembersWindow.xaml.cs",
+              "RelativeToolTip": "Group8_WPF\\ViewDeletedMembersWindow.xaml.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAqwBwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T16:05:07.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViewDeletedMembersWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\ViewDeletedMembersWindow.xaml",
+              "RelativeDocumentMoniker": "Group8_WPF\\ViewDeletedMembersWindow.xaml",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\ViewDeletedMembersWindow.xaml",
+              "RelativeToolTip": "Group8_WPF\\ViewDeletedMembersWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-12T16:04:12.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateMemberWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\UpdateMemberWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Group8_WPF\\UpdateMemberWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\UpdateMemberWindow.xaml.cs",
+              "RelativeToolTip": "Group8_WPF\\UpdateMemberWindow.xaml.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAYwDQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T15:36:49.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EditEducationWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\EditEducationWindow.xaml",
+              "RelativeDocumentMoniker": "Group8_WPF\\EditEducationWindow.xaml",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\EditEducationWindow.xaml",
+              "RelativeToolTip": "Group8_WPF\\EditEducationWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-06T18:08:16.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Group8_WPF\\MainWindow.xaml",
@@ -267,20 +373,300 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "AddMemberWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\AddMemberWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Group8_WPF\\AddMemberWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\AddMemberWindow.xaml.cs",
+              "RelativeToolTip": "Group8_WPF\\AddMemberWindow.xaml.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowCoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T15:46:37.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MemberDAO.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\MemberDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayers\\MemberDAO.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\MemberDAO.cs",
+              "RelativeToolTip": "DataAccessLayers\\MemberDAO.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T12:34:11.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpdateMemberDTO.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\DTOs\\Member\\UpdateMemberDTO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayers\\DTOs\\Member\\UpdateMemberDTO.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\DTOs\\Member\\UpdateMemberDTO.cs",
+              "RelativeToolTip": "DataAccessLayers\\DTOs\\Member\\UpdateMemberDTO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T15:42:04.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UpdateMemberWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\UpdateMemberWindow.xaml",
+              "RelativeDocumentMoniker": "Group8_WPF\\UpdateMemberWindow.xaml",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\UpdateMemberWindow.xaml",
+              "RelativeToolTip": "Group8_WPF\\UpdateMemberWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-12T15:35:55.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddMemberWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\AddMemberWindow.xaml",
+              "RelativeDocumentMoniker": "Group8_WPF\\AddMemberWindow.xaml",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\AddMemberWindow.xaml",
+              "RelativeToolTip": "Group8_WPF\\AddMemberWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-12T14:59:29.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserDAO.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\UserDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayers\\UserDAO.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\UserDAO.cs",
+              "RelativeToolTip": "DataAccessLayers\\UserDAO.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAmwF8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T17:41:13.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\BusinessObjects\\User.cs",
+              "RelativeDocumentMoniker": "BusinessObjects\\User.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\BusinessObjects\\User.cs",
+              "RelativeToolTip": "BusinessObjects\\User.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAgwBcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T16:54:08.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\BusinessObjects\\Member.cs",
+              "RelativeDocumentMoniker": "BusinessObjects\\Member.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\BusinessObjects\\Member.cs",
+              "RelativeToolTip": "BusinessObjects\\Member.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T12:14:07.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AddMemberSkillWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\AddMemberSkillWindow.xaml",
+              "RelativeDocumentMoniker": "Group8_WPF\\AddMemberSkillWindow.xaml",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\AddMemberSkillWindow.xaml",
+              "RelativeToolTip": "Group8_WPF\\AddMemberSkillWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-04T10:19:08.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "JobApplicationDAO.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\JobApplicationDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayers\\JobApplicationDAO.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\JobApplicationDAO.cs",
+              "RelativeToolTip": "DataAccessLayers\\JobApplicationDAO.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAuwC0AAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T16:10:28.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "InterviewScheduleService.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Services\\InterviewScheduleService.cs",
+              "RelativeDocumentMoniker": "Services\\InterviewScheduleService.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Services\\InterviewScheduleService.cs",
+              "RelativeToolTip": "Services\\InterviewScheduleService.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwCcAAABpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T09:19:41.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IInterviewScheduleService.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Services\\IInterviewScheduleService.cs",
+              "RelativeDocumentMoniker": "Services\\IInterviewScheduleService.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Services\\IInterviewScheduleService.cs",
+              "RelativeToolTip": "Services\\IInterviewScheduleService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA8AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T09:19:32.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IInterviewScheduleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Repositories\\IInterviewScheduleRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IInterviewScheduleRepository.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Repositories\\IInterviewScheduleRepository.cs",
+              "RelativeToolTip": "Repositories\\IInterviewScheduleRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T13:53:46.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "InterviewScheduleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Repositories\\InterviewScheduleRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\InterviewScheduleRepository.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Repositories\\InterviewScheduleRepository.cs",
+              "RelativeToolTip": "Repositories\\InterviewScheduleRepository.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwCAAAABpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T13:53:38.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "Group8_WPF\\LoginWindow.xaml.cs",
               "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\LoginWindow.xaml.cs",
               "RelativeToolTip": "Group8_WPF\\LoginWindow.xaml.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAAADUAAAARAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowDIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T09:33:44.015Z",
+              "WhenOpened": "2024-11-12T13:25:07.721Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 22,
+              "Title": "GenderConverter.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\GenderConverter.cs",
+              "RelativeDocumentMoniker": "Group8_WPF\\GenderConverter.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\GenderConverter.cs",
+              "RelativeToolTip": "Group8_WPF\\GenderConverter.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T12:56:51.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "InterviewScheduleDAO.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\InterviewScheduleDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayers\\InterviewScheduleDAO.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\InterviewScheduleDAO.cs",
+              "RelativeToolTip": "DataAccessLayers\\InterviewScheduleDAO.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAuwD8AAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T09:26:40.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20241112123244_24.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\Migrations\\20241112123244_24.cs",
+              "RelativeDocumentMoniker": "DataAccessLayers\\Migrations\\20241112123244_24.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\Migrations\\20241112123244_24.cs",
+              "RelativeToolTip": "DataAccessLayers\\Migrations\\20241112123244_24.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T12:32:44.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SkillsConverter.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\SkillsConverter.cs",
+              "RelativeDocumentMoniker": "Group8_WPF\\SkillsConverter.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\SkillsConverter.cs",
+              "RelativeToolTip": "Group8_WPF\\SkillsConverter.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T10:29:24.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SignupWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\SignupWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Group8_WPF\\SignupWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\SignupWindow.xaml.cs",
+              "RelativeToolTip": "Group8_WPF\\SignupWindow.xaml.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAACoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T12:17:36.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "InterviewSchedulingWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\InterviewSchedulingWindow.xaml",
+              "RelativeDocumentMoniker": "Group8_WPF\\InterviewSchedulingWindow.xaml",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\InterviewSchedulingWindow.xaml",
+              "RelativeToolTip": "Group8_WPF\\InterviewSchedulingWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-07T18:42:38.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SignupWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\SignupWindow.xaml",
+              "RelativeDocumentMoniker": "Group8_WPF\\SignupWindow.xaml",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\SignupWindow.xaml",
+              "RelativeToolTip": "Group8_WPF\\SignupWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-04T08:43:22.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "Group8_WPF\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\LoginWindow.xaml",
+              "RelativeToolTip": "Group8_WPF\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-05T09:33:43.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "InterviewSchedulingWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\InterviewSchedulingWindow.xaml.cs",
               "RelativeDocumentMoniker": "Group8_WPF\\InterviewSchedulingWindow.xaml.cs",
@@ -293,95 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\LoginWindow.xaml",
-              "RelativeDocumentMoniker": "Group8_WPF\\LoginWindow.xaml",
-              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\LoginWindow.xaml",
-              "RelativeToolTip": "Group8_WPF\\LoginWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-05T09:33:43.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SignupWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\SignupWindow.xaml",
-              "RelativeDocumentMoniker": "Group8_WPF\\SignupWindow.xaml",
-              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\SignupWindow.xaml",
-              "RelativeToolTip": "Group8_WPF\\SignupWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-04T08:43:22.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InterviewSchedulingWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\InterviewSchedulingWindow.xaml",
-              "RelativeDocumentMoniker": "Group8_WPF\\InterviewSchedulingWindow.xaml",
-              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\InterviewSchedulingWindow.xaml",
-              "RelativeToolTip": "Group8_WPF\\InterviewSchedulingWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-07T18:42:38.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "InterviewScheduleDAO.cs",
-              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\InterviewScheduleDAO.cs",
-              "RelativeDocumentMoniker": "DataAccessLayers\\InterviewScheduleDAO.cs",
-              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\InterviewScheduleDAO.cs",
-              "RelativeToolTip": "DataAccessLayers\\InterviewScheduleDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T09:26:40.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Group8_WPF\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Group8_WPF\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAI4AAAAAAAAAAAAAAJQAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T08:43:22.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IInterviewScheduleService.cs",
-              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Services\\IInterviewScheduleService.cs",
-              "RelativeDocumentMoniker": "Services\\IInterviewScheduleService.cs",
-              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Services\\IInterviewScheduleService.cs",
-              "RelativeToolTip": "Services\\IInterviewScheduleService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T09:19:32.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserDAO.cs",
-              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\UserDAO.cs",
-              "RelativeDocumentMoniker": "DataAccessLayers\\UserDAO.cs",
-              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\UserDAO.cs",
-              "RelativeToolTip": "DataAccessLayers\\UserDAO.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAxwFYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T17:41:13.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 30,
               "Title": "RecruitmentCompanyDAO.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\RecruitmentCompanyDAO.cs",
               "RelativeDocumentMoniker": "DataAccessLayers\\RecruitmentCompanyDAO.cs",
@@ -394,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 31,
               "Title": "InterviewSchedule.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\BusinessObjects\\InterviewSchedule.cs",
               "RelativeDocumentMoniker": "BusinessObjects\\InterviewSchedule.cs",
@@ -407,20 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "InterviewScheduleService.cs",
-              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Services\\InterviewScheduleService.cs",
-              "RelativeDocumentMoniker": "Services\\InterviewScheduleService.cs",
-              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Services\\InterviewScheduleService.cs",
-              "RelativeToolTip": "Services\\InterviewScheduleService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T09:19:41.83Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 32,
               "Title": "EditWorkExperienceWindow.xaml",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\EditWorkExperienceWindow.xaml",
               "RelativeDocumentMoniker": "Group8_WPF\\EditWorkExperienceWindow.xaml",
@@ -432,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 33,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\App.xaml",
               "RelativeDocumentMoniker": "Group8_WPF\\App.xaml",
@@ -444,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 35,
               "Title": "AddEducationWindow.xaml",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\AddEducationWindow.xaml",
               "RelativeDocumentMoniker": "Group8_WPF\\AddEducationWindow.xaml",
@@ -456,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 36,
               "Title": "CompanyInfoWindow.xaml",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\CompanyInfoWindow.xaml",
               "RelativeDocumentMoniker": "Group8_WPF\\CompanyInfoWindow.xaml",
@@ -468,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 34,
               "Title": "AddWorkExperienceWindow.xaml",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\AddWorkExperienceWindow.xaml",
               "RelativeDocumentMoniker": "Group8_WPF\\AddWorkExperienceWindow.xaml",
@@ -480,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 38,
               "Title": "EditJobWindow.xaml",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\EditJobWindow.xaml",
               "RelativeDocumentMoniker": "Group8_WPF\\EditJobWindow.xaml",
@@ -492,7 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 39,
               "Title": "EditMemberSkillWindow.xaml",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\EditMemberSkillWindow.xaml",
               "RelativeDocumentMoniker": "Group8_WPF\\EditMemberSkillWindow.xaml",
@@ -504,19 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "EditEducationWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\EditEducationWindow.xaml",
-              "RelativeDocumentMoniker": "Group8_WPF\\EditEducationWindow.xaml",
-              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\EditEducationWindow.xaml",
-              "RelativeToolTip": "Group8_WPF\\EditEducationWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-06T18:08:16.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 37,
               "Title": "CVViewerWindow.xaml",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\CVViewerWindow.xaml",
               "RelativeDocumentMoniker": "Group8_WPF\\CVViewerWindow.xaml",
@@ -528,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 40,
               "Title": "ViewProfileWindow.xaml",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\ViewProfileWindow.xaml",
               "RelativeDocumentMoniker": "Group8_WPF\\ViewProfileWindow.xaml",
@@ -540,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 41,
               "Title": "ViewProfileWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\ViewProfileWindow.xaml.cs",
               "RelativeDocumentMoniker": "Group8_WPF\\ViewProfileWindow.xaml.cs",
@@ -553,7 +826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 42,
               "Title": "JobDAO.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\JobDAO.cs",
               "RelativeDocumentMoniker": "DataAccessLayers\\JobDAO.cs",
@@ -566,7 +839,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 43,
               "Title": "EditJobWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\EditJobWindow.xaml.cs",
               "RelativeDocumentMoniker": "Group8_WPF\\EditJobWindow.xaml.cs",
@@ -579,7 +852,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 46,
               "Title": "JobSkill.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\BusinessObjects\\JobSkill.cs",
               "RelativeDocumentMoniker": "BusinessObjects\\JobSkill.cs",
@@ -592,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 44,
               "Title": "JobSkillDAO.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\JobSkillDAO.cs",
               "RelativeDocumentMoniker": "DataAccessLayers\\JobSkillDAO.cs",
@@ -605,7 +878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 45,
               "Title": "Job.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\BusinessObjects\\Job.cs",
               "RelativeDocumentMoniker": "BusinessObjects\\Job.cs",
@@ -618,7 +891,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 48,
               "Title": "MemberSkillDAO.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\MemberSkillDAO.cs",
               "RelativeDocumentMoniker": "DataAccessLayers\\MemberSkillDAO.cs",
@@ -631,19 +904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "SkillsConverter.cs",
-              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\SkillsConverter.cs",
-              "RelativeDocumentMoniker": "Group8_WPF\\SkillsConverter.cs",
-              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\SkillsConverter.cs",
-              "RelativeToolTip": "Group8_WPF\\SkillsConverter.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T10:29:24.72Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 47,
               "Title": "SkillItem.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\SkillItem.cs",
               "RelativeDocumentMoniker": "Group8_WPF\\SkillItem.cs",
@@ -651,11 +912,12 @@
               "RelativeToolTip": "Group8_WPF\\SkillItem.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T12:35:10.52Z"
+              "WhenOpened": "2024-11-06T12:35:10.52Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 50,
               "Title": "CVViewerWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\CVViewerWindow.xaml.cs",
               "RelativeDocumentMoniker": "Group8_WPF\\CVViewerWindow.xaml.cs",
@@ -663,11 +925,12 @@
               "RelativeToolTip": "Group8_WPF\\CVViewerWindow.xaml.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAgwB0AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:41:57.117Z"
+              "WhenOpened": "2024-11-05T08:41:57.117Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 49,
               "Title": "AddEducationWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\AddEducationWindow.xaml.cs",
               "RelativeDocumentMoniker": "Group8_WPF\\AddEducationWindow.xaml.cs",
@@ -675,11 +938,12 @@
               "RelativeToolTip": "Group8_WPF\\AddEducationWindow.xaml.cs",
               "ViewState": "AQIAADMAAAAAAAAAAAAowEAAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T16:17:34.913Z"
+              "WhenOpened": "2024-11-04T16:17:34.913Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 52,
               "Title": "ApplyWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\ApplyWindow.xaml.cs",
               "RelativeDocumentMoniker": "Group8_WPF\\ApplyWindow.xaml.cs",
@@ -687,34 +951,24 @@
               "RelativeToolTip": "Group8_WPF\\ApplyWindow.xaml.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAA+wCkAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T15:14:13.812Z"
+              "WhenOpened": "2024-11-04T15:14:13.812Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\BusinessObjects\\User.cs",
-              "RelativeDocumentMoniker": "BusinessObjects\\User.cs",
-              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\BusinessObjects\\User.cs",
-              "RelativeToolTip": "BusinessObjects\\User.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAA/wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T16:54:08.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 51,
               "Title": "ApplyWindow.xaml",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\ApplyWindow.xaml",
               "RelativeDocumentMoniker": "Group8_WPF\\ApplyWindow.xaml",
               "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\ApplyWindow.xaml",
               "RelativeToolTip": "Group8_WPF\\ApplyWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-04T15:03:32.647Z"
+              "WhenOpened": "2024-11-04T15:03:32.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 53,
               "Title": "JobApplication.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\BusinessObjects\\JobApplication.cs",
               "RelativeDocumentMoniker": "BusinessObjects\\JobApplication.cs",
@@ -722,11 +976,12 @@
               "RelativeToolTip": "BusinessObjects\\JobApplication.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwBEAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T16:08:18.329Z"
+              "WhenOpened": "2024-11-04T16:08:18.329Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 54,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\App.xaml.cs",
               "RelativeDocumentMoniker": "Group8_WPF\\App.xaml.cs",
@@ -734,11 +989,12 @@
               "RelativeToolTip": "Group8_WPF\\App.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T15:14:16.363Z"
+              "WhenOpened": "2024-11-04T15:14:16.363Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 55,
               "Title": "EditMemberSkillWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\EditMemberSkillWindow.xaml.cs",
               "RelativeDocumentMoniker": "Group8_WPF\\EditMemberSkillWindow.xaml.cs",
@@ -746,11 +1002,12 @@
               "RelativeToolTip": "Group8_WPF\\EditMemberSkillWindow.xaml.cs",
               "ViewState": "AQIAAD8AAAAAAAAAAIBMwEsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T13:38:32.097Z"
+              "WhenOpened": "2024-11-04T13:38:32.097Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 56,
               "Title": "AddWorkExperienceWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\AddWorkExperienceWindow.xaml.cs",
               "RelativeDocumentMoniker": "Group8_WPF\\AddWorkExperienceWindow.xaml.cs",
@@ -758,22 +1015,12 @@
               "RelativeToolTip": "Group8_WPF\\AddWorkExperienceWindow.xaml.cs",
               "ViewState": "AQIAABMAAAAAAAAAAIBMwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T13:39:08.323Z"
+              "WhenOpened": "2024-11-04T13:39:08.323Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "AddMemberSkillWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\AddMemberSkillWindow.xaml",
-              "RelativeDocumentMoniker": "Group8_WPF\\AddMemberSkillWindow.xaml",
-              "ToolTip": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Group8_WPF\\AddMemberSkillWindow.xaml",
-              "RelativeToolTip": "Group8_WPF\\AddMemberSkillWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-04T10:19:08.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 57,
               "Title": "SkillDAO.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\SkillDAO.cs",
               "RelativeDocumentMoniker": "DataAccessLayers\\SkillDAO.cs",
@@ -781,11 +1028,12 @@
               "RelativeToolTip": "DataAccessLayers\\SkillDAO.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAIBMwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:48:53.733Z"
+              "WhenOpened": "2024-11-04T10:48:53.733Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 58,
               "Title": "SkillService.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Services\\SkillService.cs",
               "RelativeDocumentMoniker": "Services\\SkillService.cs",
@@ -793,11 +1041,12 @@
               "RelativeToolTip": "Services\\SkillService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:37:58.35Z"
+              "WhenOpened": "2024-11-04T10:37:58.35Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 59,
               "Title": "ISkillService.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Services\\ISkillService.cs",
               "RelativeDocumentMoniker": "Services\\ISkillService.cs",
@@ -805,11 +1054,12 @@
               "RelativeToolTip": "Services\\ISkillService.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAIBMwA4AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:37:34.98Z"
+              "WhenOpened": "2024-11-04T10:37:34.98Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 60,
               "Title": "ISkillRepository.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Repositories\\ISkillRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\ISkillRepository.cs",
@@ -817,11 +1067,12 @@
               "RelativeToolTip": "Repositories\\ISkillRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBMwA4AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:35:59.708Z"
+              "WhenOpened": "2024-11-04T10:35:59.708Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 61,
               "Title": "SkillRepository.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Repositories\\SkillRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\SkillRepository.cs",
@@ -829,11 +1080,12 @@
               "RelativeToolTip": "Repositories\\SkillRepository.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAgwB0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:36:46.102Z"
+              "WhenOpened": "2024-11-04T10:36:46.102Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 62,
               "Title": "MemberSkillService.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Services\\MemberSkillService.cs",
               "RelativeDocumentMoniker": "Services\\MemberSkillService.cs",
@@ -841,11 +1093,12 @@
               "RelativeToolTip": "Services\\MemberSkillService.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAwwCMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T08:41:42.517Z"
+              "WhenOpened": "2024-11-04T08:41:42.517Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 65,
               "Title": "IMemberRepository.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Repositories\\IMemberRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\IMemberRepository.cs",
@@ -853,11 +1106,12 @@
               "RelativeToolTip": "Repositories\\IMemberRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T08:41:23.907Z"
+              "WhenOpened": "2024-11-04T08:41:23.907Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 63,
               "Title": "IMemberSkillService.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Services\\IMemberSkillService.cs",
               "RelativeDocumentMoniker": "Services\\IMemberSkillService.cs",
@@ -865,11 +1119,12 @@
               "RelativeToolTip": "Services\\IMemberSkillService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T08:41:08.121Z"
+              "WhenOpened": "2024-11-04T08:41:08.121Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 64,
               "Title": "IMemberSkillRepository.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Repositories\\IMemberSkillRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\IMemberSkillRepository.cs",
@@ -877,11 +1132,12 @@
               "RelativeToolTip": "Repositories\\IMemberSkillRepository.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAIBMwA4AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T08:39:11.541Z"
+              "WhenOpened": "2024-11-04T08:39:11.541Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 66,
               "Title": "MemberSkillRepository.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\Repositories\\MemberSkillRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\MemberSkillRepository.cs",
@@ -889,11 +1145,12 @@
               "RelativeToolTip": "Repositories\\MemberSkillRepository.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAowB0AAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T08:39:59.935Z"
+              "WhenOpened": "2024-11-04T08:39:59.935Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 68,
               "Title": "EducationDAO.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\EducationDAO.cs",
               "RelativeDocumentMoniker": "DataAccessLayers\\EducationDAO.cs",
@@ -901,11 +1158,12 @@
               "RelativeToolTip": "DataAccessLayers\\EducationDAO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBMwA0AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T08:22:32.768Z"
+              "WhenOpened": "2024-11-04T08:22:32.768Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 67,
               "Title": "WorkExperienceDAO.cs",
               "DocumentMoniker": "C:\\Users\\GiaBaoZ\\Desktop\\PRN212\\Group8_SE1856_GroupProject\\DataAccessLayers\\WorkExperienceDAO.cs",
               "RelativeDocumentMoniker": "DataAccessLayers\\WorkExperienceDAO.cs",
@@ -913,7 +1171,8 @@
               "RelativeToolTip": "DataAccessLayers\\WorkExperienceDAO.cs",
               "ViewState": "AQIAAFMAAAAAAAAAAAAAwFwAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T08:22:27.071Z"
+              "WhenOpened": "2024-11-04T08:22:27.071Z",
+              "EditorCaption": ""
             }
           ]
         },

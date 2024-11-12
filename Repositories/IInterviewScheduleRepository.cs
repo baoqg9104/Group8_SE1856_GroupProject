@@ -12,7 +12,7 @@ namespace Repositories
         List<InterviewSchedule> GetInterviewSchedules();
         InterviewSchedule GetInterviewSchedule(int id);
         void AddInterviewSchedule(InterviewSchedule interviewSchedule);
-        void UpdateInterviewSchedule(InterviewSchedule interviewSchedule);
+        void UpdateInterviewSchedule(InterviewSchedule interviewSchedule, string? contition = null);
         void DeleteInterviewSchedule(InterviewSchedule interviewSchedule);
     }
 }

@@ -92,7 +92,8 @@ namespace DataAccessLayers
         public static void DeleteUser(User user)
         {
             using var context = new JobFinderContext();
-            context.Users.Remove(user);
+            user.Status = UserStatus.Deleted;
+            context.Users.Update(user);
             context.SaveChanges();
         }
 
@@ -132,7 +133,8 @@ namespace DataAccessLayers
                 Name = fullName,
                 Email = email,
                 Password = password,
-                RoleId = 2
+                RoleId = 2,
+                Status = UserStatus.Active,
             };
 
             AddUser(user);

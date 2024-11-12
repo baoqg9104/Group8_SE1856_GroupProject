@@ -12,3 +12,4 @@ C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\BusinessObjects\obj\D
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\BusinessObjects\obj\Debug\net8.0\BusinessObjects.pdb
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\BusinessObjects\obj\Debug\net8.0\BusinessObjects.genruntimeconfig.cache
 C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\BusinessObjects\obj\Debug\net8.0\ref\BusinessObjects.dll
+C:\Users\GiaBaoZ\Desktop\PRN212\Group8_SE1856_GroupProject\BusinessObjects\obj\Debug\net8.0\BusinessObjects.sourcelink.json

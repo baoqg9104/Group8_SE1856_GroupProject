@@ -1,4 +1,5 @@
-﻿using DataAccessLayers;
+﻿using BusinessObjects;
+using DataAccessLayers;
 using Microsoft.Extensions.Configuration;
 using Services;
 using System;
@@ -40,15 +41,22 @@ namespace Group8_WPF
 
             var user = userService.Login(email);
 
-            if (user != null && user.Password == password)
+            if (user != null && user.Password == password && user.Status != UserStatus.Deleted)
             {
+
+                if (user.Status == UserStatus.Banned)
+                {
+                    MessageBox.Show("Your account has been banned!");
+                    return;
+                }
+
                 Application.Current.Properties["UserId"] = user.UserId.ToString();
 
                 MainWindow mainWindow = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
 
                 if (user.RoleId == 1)
                 {
-                    
+                    mainWindow.SetUser("Admin", user.Name);
                 }
                 else if (user.RoleId == 2)
                 {

@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using Services;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -72,6 +73,7 @@ namespace Group8_WPF
             ManageApplicants.Visibility = Visibility.Collapsed;
             InterviewScheduleCompany.Visibility = Visibility.Collapsed;
             CompanyProfile.Visibility = Visibility.Collapsed;
+            ManageMember.Visibility = Visibility.Collapsed;
 
             if (role == "Guest")
             {
@@ -108,6 +110,7 @@ namespace Group8_WPF
                 WithdrawBtn.Visibility = Visibility.Visible;
                 WithdrawBtn.IsEnabled = false;
                 ConfirmBtn.IsEnabled = false;
+                CancelBtn.IsEnabled = false;
             }
             else if (role == "Company")
             {
@@ -144,6 +147,20 @@ namespace Group8_WPF
                 SkillListBox.ItemsSource = skillItems;
 
                 MainTabControl.SelectedIndex = 5;
+            }
+            else if (role == "Admin")
+            {
+                ManageMember.Visibility = Visibility;
+                SignupBtn.Visibility = Visibility.Collapsed;
+                UpdateMemberBtn.IsEnabled = false;
+                DeleteMemberBtn.IsEnabled = false;
+                ActivateMemberBtn.IsEnabled = false;
+                BanMemberBtn.IsEnabled = false;
+
+                LoginBtn.Content = "Log out";
+                LoginBtn.Click -= Login_Click;
+                LoginBtn.Click += Logout_Click;
+                MainTabControl.SelectedIndex = 9;
             }
 
             if (role == "Guest")
@@ -441,6 +458,7 @@ namespace Group8_WPF
                 {
                     ManageApplicantDataGrid.ItemsSource = null;
                     ManageApplicantDataGrid.ItemsSource = jobApplications;
+                    LoadAndGroupData();
                 }
 
             }
@@ -448,6 +466,20 @@ namespace Group8_WPF
             {
                 MessageBox.Show("Error on load manage applicant!");
             }
+        }
+
+        private void LoadAndGroupData()
+        {
+            var view = CollectionViewSource.GetDefaultView(ManageApplicantDataGrid.ItemsSource);
+
+            // Clear any existing grouping
+            view.GroupDescriptions.Clear();
+
+            // Group by JobId (this will automatically group items with same JobId and JobTitle together)
+            view.GroupDescriptions.Add(new PropertyGroupDescription("Job.JobId"));
+
+            // Sort by JobId
+            view.SortDescriptions.Add(new SortDescription("Job.JobId", ListSortDirection.Ascending));
         }
 
         public void LoadManageInterview()
@@ -512,6 +544,27 @@ namespace Group8_WPF
             }
         }
 
+        public void LoadManageMember()
+        {
+            try
+            {
+                var members = memberService
+                    .GetMembers()
+                    .Where(x => x.User.Status != UserStatus.Deleted)
+                    .ToList();
+
+                if (members != null)
+                {
+                    ManageMemberDataGrid.ItemsSource = null;
+                    ManageMemberDataGrid.ItemsSource = members;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error on load manage member!");
+            }
+        }
+
         private void JobDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (JobDataGrid.SelectedItem != null)
@@ -552,13 +605,20 @@ namespace Group8_WPF
             if (interview == null)
             {
                 ConfirmBtn.IsEnabled = false;
+                CancelBtn.IsEnabled = false;
                 return;
             }
 
             if (interview.Status == "Pending")
             {
                 ConfirmBtn.IsEnabled = true;
+                CancelBtn.IsEnabled = true;
             }
+            else if (interview.Status == "Confirmed")
+            {
+                CancelBtn.IsEnabled = true;
+            }
+
         }
 
         private void ManageApplicantDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -573,7 +633,7 @@ namespace Group8_WPF
                 RejectBtn.IsEnabled = false;
                 OnHoldBtn.IsEnabled = false;
 
-                if (jobApplicationService.GetJobApplications().Any(ja => ja.Status == "Accepted"))
+                if (jobApplicationService.GetJobApplications().Any(ja => ja.Status == "Accepted" && ja.JobId == jobA.JobId))
                 {
                     return;
                 }
@@ -598,6 +658,30 @@ namespace Group8_WPF
                 RejectBtn.IsEnabled = false;
                 OnHoldBtn.IsEnabled = false;
             }
+        }
+
+        private void ManageMemberDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var member = ManageMemberDataGrid.SelectedItem as Member;
+            if (member == null)
+            {
+                return;
+            }
+
+            UpdateMemberBtn.IsEnabled = true;
+            DeleteMemberBtn.IsEnabled = true;
+            ActivateMemberBtn.IsEnabled = false;
+            BanMemberBtn.IsEnabled = false;
+
+            if (member.User.Status == UserStatus.Active)
+            {
+                BanMemberBtn.IsEnabled = true;
+            }
+            else if (member.User.Status == UserStatus.Banned)
+            {
+                ActivateMemberBtn.IsEnabled = true;
+            }
+
         }
 
         private void SkillChecked(object sender, RoutedEventArgs e)
@@ -1224,6 +1308,10 @@ namespace Group8_WPF
                     {
                         LoadCompanyProfile();
                     }
+                    else if (selectedTabItem.Header.Equals("Manage Member"))
+                    {
+                        LoadManageMember();
+                    }
                 }
             }
         }
@@ -1387,5 +1475,209 @@ namespace Group8_WPF
 
         }
 
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            var interview = InterviewDataGrid.SelectedItem as InterviewSchedule;
+            if (interview == null)
+            {
+                return;
+            }
+
+            try
+            {
+                var result = MessageBox.Show("Cancel this interview?", "Confirm?", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if (result == MessageBoxResult.Yes)
+                {
+                    interview.Status = "Canceled";
+                    interviewScheduleService.UpdateInterviewSchedule(interview);
+                    LoadInterviewSchedule();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        // Manage member
+        private void AddMember_Click(object sender, RoutedEventArgs e)
+        {
+            AddMemberWindow addMemberWindow = new AddMemberWindow();
+            addMemberWindow.ShowDialog();
+            LoadManageMember();
+
+        }
+
+        private void ActiveMember_Click(object sender, RoutedEventArgs e)
+        {
+            var member = ManageMemberDataGrid.SelectedItem as Member;
+
+            if (member == null)
+            {
+                return;
+            }
+
+            var user = userService.GetUser(member.UserId);
+            try
+            {
+                var result = MessageBox.Show("Active this account?", "Confirm?", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if (result == MessageBoxResult.Yes)
+                {
+                    user.Status = UserStatus.Active;
+                    userService.UpdateUser(user);
+
+                    var jobApplieds = jobApplicationService
+                        .GetJobApplications()
+                        .Where(x => x.MemberId == member.MemberId);
+
+                    foreach (var application in jobApplieds)
+                    {
+                        application.Status = "Canceled";
+                        jobApplicationService.UpdateJobApplication(application);
+                    }
+
+                    var interviews = interviewScheduleService
+                        .GetInterviewSchedules()
+                        .Where(x => jobApplieds.Select(y => y.ApplicationId).Contains(x.ApplicationId));
+
+                    foreach (var i in interviews)
+                    {
+                        i.Status = "Canceled";
+                        interviewScheduleService.UpdateInterviewSchedule(i, "Active");
+                    }
+
+                    LoadManageMember();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void BanMember_Click(object sender, RoutedEventArgs e)
+        {
+            var member = ManageMemberDataGrid.SelectedItem as Member;
+
+            if (member == null)
+            {
+                return;
+            }
+
+            var user = userService.GetUser(member.UserId);
+            try
+            {
+                var result = MessageBox.Show("Ban this account?", "Confirm?", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if (result == MessageBoxResult.Yes)
+                {
+                    user.Status = UserStatus.Banned;
+                    userService.UpdateUser(user);
+
+                    var jobApplieds = jobApplicationService
+                        .GetJobApplications()
+                        .Where(x => x.MemberId == member.MemberId);
+
+                    foreach (var application in jobApplieds)
+                    {
+                        application.Status = "Member Banned";
+                        jobApplicationService.UpdateJobApplication(application);
+                    }
+
+                    var interviews = interviewScheduleService
+                        .GetInterviewSchedules()
+                        .Where(x => jobApplieds.Select(y => y.ApplicationId).Contains(x.ApplicationId));
+
+                    foreach (var i in interviews)
+                    {
+                        i.Status = "Member Banned";
+                        interviewScheduleService.UpdateInterviewSchedule(i);
+                    }
+
+                    LoadManageMember();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+        }
+
+        private void DeleteMember_Click(object sender, RoutedEventArgs e)
+        {
+            var member = ManageMemberDataGrid.SelectedItem as Member;
+
+            if (member == null)
+            {
+                return;
+            }
+
+            var user = userService.GetUser(member.UserId);
+            try
+            {
+                var result = MessageBox.Show("Delete this account?", "Confirm?", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if (result == MessageBoxResult.Yes)
+                {
+                    userService.DeleteUser(user);
+
+                    var jobApplieds = jobApplicationService
+                        .GetJobApplications()
+                        .Where(x => x.MemberId == member.MemberId);
+
+                    foreach (var application in jobApplieds)
+                    {
+                        application.Status = "Member Deleted";
+                        jobApplicationService.UpdateJobApplication(application);
+                    }
+
+                    var interviews = interviewScheduleService
+                        .GetInterviewSchedules()
+                        .Where(x => jobApplieds.Select(y => y.ApplicationId).Contains(x.ApplicationId));
+
+                    foreach (var i in interviews)
+                    {
+                        i.Status = "Member Deleted";
+                        interviewScheduleService.UpdateInterviewSchedule(i);
+                    }
+
+                    LoadManageMember();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+        }
+
+        private void UpdateMember_Click(object sender, RoutedEventArgs e)
+        {
+            var member = ManageMemberDataGrid.SelectedItem as Member;
+
+            if (member == null)
+            {
+                return;
+            }
+
+            UpdateMemberWindow updateMemberWindow = new UpdateMemberWindow(member);
+            updateMemberWindow.ShowDialog();
+            LoadManageMember();
+        }
+
+        private void ViewDeletedMembers_Click(object sender, RoutedEventArgs e)
+        {
+            ViewDeletedMembersWindow viewDeletedMembersWindow = new ViewDeletedMembersWindow();
+            viewDeletedMembersWindow.ShowDialog();
+        }
     }
 }
